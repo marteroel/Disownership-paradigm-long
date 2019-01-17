@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F89D4A92-47F3-D34F-B7B3-90AB16E0AE57}</ProjectGuid>
+    <ProjectGuid>{C7F9DA93-435C-A34A-0D9B-6531D620A99B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -104,16 +104,16 @@
      <Compile Include="Assets\Packages\extOSC\Scripts\Editor\Windows\OSCWindowMapping.cs" />
      <Compile Include="Assets\Packages\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/Marte/Documents/Projects/Unity/Threat (self touch)/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Marte/Documents/GitHub/Disownership-paradigm-long/Disownership paradigm Unity/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Marte/Documents/Projects/Unity/Threat (self touch)/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/Marte/Documents/GitHub/Disownership-paradigm-long/Disownership paradigm Unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/Marte/Documents/Projects/Unity/Threat (self touch)/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/Marte/Documents/GitHub/Disownership-paradigm-long/Disownership paradigm Unity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Marte/Documents/Projects/Unity/Threat (self touch)/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/Marte/Documents/GitHub/Disownership-paradigm-long/Disownership paradigm Unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -400,7 +400,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{F740CFFB-447A-0997-BF4D-1116A4C2FE94}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{44882C42-D9E8-B34B-5D38-C8972C86EBDE}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

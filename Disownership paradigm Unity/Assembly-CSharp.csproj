@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F740CFFB-447A-0997-BF4D-1116A4C2FE94}</ProjectGuid>
+    <ProjectGuid>{44882C42-D9E8-B34B-5D38-C8972C86EBDE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -313,6 +313,7 @@
      <Compile Include="Assets\Scripts\ConditionManager.cs" />
      <Compile Include="Assets\Scripts\ConditionSetter.cs" />
      <Compile Include="Assets\Scripts\OscMessageManager.cs" />
+     <Compile Include="Assets\Scripts\PlaySound.cs" />
      <Compile Include="Assets\Scripts\TimedCommands.cs" />
      <Compile Include="Assets\Scripts\WebcamTest.cs" />
      <Compile Include="Assets\Scripts\WebcamUI.cs" />
@@ -324,16 +325,16 @@
      <None Include="Assets\Packages\VRSampleScenes\Fonts\RobotoLicense.txt" />
      <None Include="Assets\Packages\extOSC\versions.txt" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/Marte/Documents/Projects/Unity/Threat (self touch)/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Marte/Documents/GitHub/Disownership-paradigm-long/Disownership paradigm Unity/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Marte/Documents/Projects/Unity/Threat (self touch)/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/Marte/Documents/GitHub/Disownership-paradigm-long/Disownership paradigm Unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/Marte/Documents/Projects/Unity/Threat (self touch)/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/Marte/Documents/GitHub/Disownership-paradigm-long/Disownership paradigm Unity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Marte/Documents/Projects/Unity/Threat (self touch)/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/Marte/Documents/GitHub/Disownership-paradigm-long/Disownership paradigm Unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

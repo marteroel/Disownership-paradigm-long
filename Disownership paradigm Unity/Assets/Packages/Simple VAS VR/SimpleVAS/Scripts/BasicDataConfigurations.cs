@@ -8,22 +8,35 @@ using System.IO.Ports;
 namespace SimpleVAS {
 	public class BasicDataConfigurations : MonoBehaviour {
 
-		public InputField nameField, ageField;
+		public InputField nameField, ageField, conditionDurationField, threatTimeField;//added  conditionDurationField, threatTimeField
 		public Text genderField, handednessField;
 		public Button nextButton;
-		public Toggle calibrationToggle;
+		public Toggle calibrationToggle, soundToggle;//added soundToggle
 		//added
 		public Dropdown webcamDevice, serialDropdown;
 		public static string ID, age, gender, handedness, conditionOrder;
-		public static bool useCalibration;
+		public static bool useCalibration, useSound;//added useSound
 		//added
 		public static int selectedWebcamDevice;
 		public static string selectedSerialPort;
+		public static float conditionDuration, threatTime;
 
 		// Use this for initialization
 		void Start () {
 			nextButton.interactable = false;
 			SetSerialDropDownOptions ();
+
+			//added soundToggle stuff
+			if (PlayerPrefs.GetInt ("use sound") == 1)
+				soundToggle.isOn = true;
+			else
+				soundToggle.isOn = false;
+
+			if(PlayerPrefs.GetFloat("condition duration") != null)
+				conditionDurationField.text = PlayerPrefs.GetFloat("condition duration").ToString();
+
+			if(PlayerPrefs.GetFloat("threat time") != null)
+				conditionDurationField.text = PlayerPrefs.GetFloat("threat time").ToString();
 		}
 		
 		// Update is called once per frame
@@ -48,9 +61,27 @@ namespace SimpleVAS {
 
 			//added
 			selectedWebcamDevice = webcamDevice.value;
+			if (soundToggle.isOn)	useSound = true;
+			else	useSound = false;
+			conditionDuration = float.Parse (conditionDurationField.text);
+			threatTime = float.Parse (threatTimeField.text);
 
-			PlayerPrefs.SetInt ("serial port", serialDropdown.value);
+
 			selectedSerialPort = serialDropdown.GetComponentInChildren<Text> ().text;
+		}
+
+		//added
+		private void storePreferences(){
+			
+			PlayerPrefs.SetInt ("serial port", serialDropdown.value);
+
+			//added soundToggle stuff
+			if (soundToggle.isOn) 	PlayerPrefs.SetInt ("use sound", 1);
+			else PlayerPrefs.SetInt ("use sound", 0);
+
+			PlayerPrefs.SetFloat ("condition duration", conditionDuration);
+			PlayerPrefs.SetFloat ("threat time", threatTime);
+
 		}
 
 		//added 

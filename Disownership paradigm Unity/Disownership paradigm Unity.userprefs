@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TimedCommands.cs">
+    <Files>
+      <File FileName="Assets\Packages\Simple VAS VR\SimpleVAS\Scripts\BasicDataConfigurations.cs" Line="37" Column="4" />
+      <File FileName="Assets\Scripts\PlaySound.cs" Line="10" Column="3" />
+      <File FileName="Assets\Scripts\TimedCommands.cs" Line="18" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
