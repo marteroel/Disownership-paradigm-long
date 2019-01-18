@@ -1,4 +1,4 @@
-# Disownership-paradigm
+# Disownership-paradigm (long)
 
 ### Unity project for the so-called long real hand illusion (for thresholds refer to a separate repository), includes setup GUI, delays webcam feed and uses VAS questionnaires on a VR headset. It should be modified in order to implement similar setups.
 
