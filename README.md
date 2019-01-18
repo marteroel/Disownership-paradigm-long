@@ -1,6 +1,6 @@
 # Disownership-paradigm
 
-### Unity project for the so-called real hand illusion, includes setup GUI, delays webcam feed and uses VAS questionnaires on a VR headset. It should be modified in order to implement similar setups.
+### Unity project for the so-called long real hand illusion (for thresholds refer to a separate repository), includes setup GUI, delays webcam feed and uses VAS questionnaires on a VR headset. It should be modified in order to implement similar setups.
 
 IMPORTANT: DO NOT COMMIT TO THE MAIN BRANCH WITHOUT PREVIOUS AUTHORIZATION.
 
@@ -20,6 +20,12 @@ The Unity project includes the following scenes in English.
 
 - Goodbye: simple UI thanking subjects for their participation. 
 
-Technical notes: the serial messages sent out of the serial port depend on the condition and range from 1-4. A future update should allow users to encode this from the GUI.
+Technical notes: 
 
+- Tested with the Oculus Rift CV1
+
+- Running on Unity 2018.2.8f1
+- the serial messages sent out of the serial port depend on the condition and range from 1-4. A future update should allow users to encode this from the GUI.
+
+- Uses the following Unity packages: extOSC, VRStandardAssets (Unity) and modified versions of SimpleWebcamDelay (BSP Lab), Simple VAS VR (BSP Lab), Serial Messenger (BSP Lab)
 
