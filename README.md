@@ -1,8 +1,8 @@
 # Disownership-paradigm
 
-##IMPORTANT: DO NOT COMMIT TO THE MAIN BRANCH WITHOUT PREVIOUS AUTHORIZATION.
-
 ### Unity project for the so-called real hand illusion, includes setup GUI, delays webcam feed and uses VAS questionnaires on a VR headset. It should be modified in order to implement similar setups.
+
+IMPORTANT: DO NOT COMMIT TO THE MAIN BRANCH WITHOUT PREVIOUS AUTHORIZATION.
 
 The Unity project includes the following scenes in English. 
 
