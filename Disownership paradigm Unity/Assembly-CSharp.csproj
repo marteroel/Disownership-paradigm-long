@@ -314,6 +314,7 @@
      <Compile Include="Assets\Scripts\ConditionSetter.cs" />
      <Compile Include="Assets\Scripts\OscMessageManager.cs" />
      <Compile Include="Assets\Scripts\PlaySound.cs" />
+     <Compile Include="Assets\Scripts\SetSerialDropdown.cs" />
      <Compile Include="Assets\Scripts\TimedCommands.cs" />
      <Compile Include="Assets\Scripts\WebcamTest.cs" />
      <Compile Include="Assets\Scripts\WebcamUI.cs" />

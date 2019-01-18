@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using SimpleVAS;
+using UnityEngine.UI;
 
 public class TimedCommands : MonoBehaviour {
 
 	public float timeForThreat, sceneDuration;
 	public string sceneToLoad;
+	public GameObject stimulationCue;
+	public Color stimulationCueColor;
 
 	private SerialControl serialController;
 	public OscMessageManager oscMessageManager;
@@ -26,7 +29,10 @@ public class TimedCommands : MonoBehaviour {
 		StartCoroutine("TriggerStimulationAt");
 		StartCoroutine("LoadSceneAt");	
 
+		if (BasicDataConfigurations.useThreatCue)	stimulationCue.SetActive (true);
+		else	stimulationCue.SetActive (false);
 
+		//sends serial messages for marking physiological recording.
 		if (ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition] == "self") {
 			if (ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition] == 0)
 				threatMessage = "1";
@@ -41,6 +47,7 @@ public class TimedCommands : MonoBehaviour {
 				threatMessage = "4";
 		}
 
+
 	}
 
 	private IEnumerator TriggerStimulationAt(){
@@ -48,7 +55,8 @@ public class TimedCommands : MonoBehaviour {
 		yield return new WaitForFixedTime (timeForThreat);
 
 		serialController.WriteToPort(threatMessage);
-		oscMessageManager.OnSendMessage("1");
+		oscMessageManager.OnSendMessage("1");//sends osc message if needed to trigger external application.
+		stimulationCue.GetComponent<Image>().color = stimulationCueColor;
 	}
 
 	private IEnumerator LoadSceneAt(){

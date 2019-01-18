@@ -11,11 +11,11 @@ namespace SimpleVAS {
 		public InputField nameField, ageField, conditionDurationField, threatTimeField;//added  conditionDurationField, threatTimeField
 		public Text genderField, handednessField;
 		public Button nextButton;
-		public Toggle calibrationToggle, soundToggle;//added soundToggle
+		public Toggle calibrationToggle, soundToggle, threatCueToggle;//added soundToggle and threatCueToggle
 		//added
 		public Dropdown webcamDevice, serialDropdown;
 		public static string ID, age, gender, handedness, conditionOrder;
-		public static bool useCalibration, useSound;//added useSound
+		public static bool useCalibration, useSound, useThreatCue;//added useSound & useThreatCue
 		//added
 		public static int selectedWebcamDevice;
 		public static string selectedSerialPort;
@@ -24,19 +24,17 @@ namespace SimpleVAS {
 		// Use this for initialization
 		void Start () {
 			nextButton.interactable = false;
-			SetSerialDropDownOptions ();
+			//SetSerialDropDownOptions ();
 
 			//added soundToggle stuff
-			if (PlayerPrefs.GetInt ("use sound") == 1)
-				soundToggle.isOn = true;
-			else
-				soundToggle.isOn = false;
+			if (PlayerPrefs.GetInt ("use sound") == 1)	soundToggle.isOn = true;
+			else	soundToggle.isOn = false;
 
-			if(PlayerPrefs.GetFloat("condition duration") != null)
-				conditionDurationField.text = PlayerPrefs.GetFloat("condition duration").ToString();
+			if (PlayerPrefs.GetInt ("use threat") == 1)	threatCueToggle.isOn = true;
+			else	threatCueToggle.isOn = false;
 
-			if(PlayerPrefs.GetFloat("threat time") != null)
-				conditionDurationField.text = PlayerPrefs.GetFloat("threat time").ToString();
+			conditionDurationField.text = PlayerPrefs.GetFloat("condition duration").ToString();
+			threatTimeField.text = PlayerPrefs.GetFloat("threat time").ToString();
 		}
 		
 		// Update is called once per frame
@@ -61,13 +59,17 @@ namespace SimpleVAS {
 
 			//added
 			selectedWebcamDevice = webcamDevice.value;
+			selectedSerialPort = serialDropdown.GetComponentInChildren<Text> ().text;
+
 			if (soundToggle.isOn)	useSound = true;
 			else	useSound = false;
+			if (threatCueToggle.isOn)	useThreatCue = true;
+			else	useThreatCue = false;
+
 			conditionDuration = float.Parse (conditionDurationField.text);
 			threatTime = float.Parse (threatTimeField.text);
 
-
-			selectedSerialPort = serialDropdown.GetComponentInChildren<Text> ().text;
+			storePreferences ();
 		}
 
 		//added
@@ -79,11 +81,15 @@ namespace SimpleVAS {
 			if (soundToggle.isOn) 	PlayerPrefs.SetInt ("use sound", 1);
 			else PlayerPrefs.SetInt ("use sound", 0);
 
+			if (threatCueToggle.isOn) 	PlayerPrefs.SetInt ("use threat", 1);
+			else PlayerPrefs.SetInt ("use threat", 0);
+
 			PlayerPrefs.SetFloat ("condition duration", conditionDuration);
 			PlayerPrefs.SetFloat ("threat time", threatTime);
 
 		}
 
+		/*
 		//added 
 		public void SetSerialDropDownOptions () {
 
@@ -96,7 +102,7 @@ namespace SimpleVAS {
 
 			serialDropdown.AddOptions (ports);
 			serialDropdown.value = PlayerPrefs.GetInt ("serial port");
-		}
+		}*/
 
 	}
 

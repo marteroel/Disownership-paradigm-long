@@ -2089,7 +2089,10 @@ MonoBehaviour:
   m_Text: '... ...
 
     If you have understood the instructions, please select ''strongly agree'' on the
-    scale and then select ''Next'''
+    scale and then select ''Next''
+
+
+    (experimenter should press ''c'' to center the image)'
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0

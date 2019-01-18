@@ -15,9 +15,24 @@ public class WebcamUI : MonoBehaviour {
 	void Start () {
 
 		webcamSelector.value = PlayerPrefs.GetInt ("selectedCamera");
+		SetWebCamOptions ();
 		SelectWebcam ();
+
+
 	}
-	
+
+	public void SetWebCamOptions(){
+		webcamSelector.options.Clear ();
+
+		List<string> devices = new List<string> ();
+		int index;
+
+		foreach (var item in WebCamTexture.devices) {
+			devices.Add(item.name);
+		}
+
+		webcamSelector.AddOptions (devices);
+	}
 
 	public void SelectWebcam () {
 
