@@ -4,6 +4,8 @@
 
 IMPORTANT: DO NOT COMMIT TO THE MAIN BRANCH WITHOUT PREVIOUS AUTHORIZATION.
 
+
+
 The Unity project includes the following scenes in English. 
 
 - Intro: includes GUI for general settings and for participant's information (webcam input, serial port, condition duration, and other selections). A future update should allow users to setup number and name of conditions.
@@ -19,6 +21,9 @@ The Unity project includes the following scenes in English.
 - VAS: the questionnaire that will be presented in the VR headset for particpants. To change the questionnaire edit the questions.csv file located in /Disownership paradigm Unity/Lists/ for Unity Editor mode or in /Lists (you have to create the directory yourself) for standalone mode. The data is logged under /Disownership paradigm Unity/Logs/ for Unity Editor mode or in /Logs (you have to create the directory yourself) for standalone mode.
 
 - Goodbye: simple UI thanking subjects for their participation. 
+
+
+--- 
 
 Technical notes: 
 
