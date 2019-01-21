@@ -1,12 +1,10 @@
 # Disownership-paradigm (long)
 
-### Unity project for the so-called long real hand illusion (for thresholds refer to a separate repository), includes setup GUI, delays webcam feed and uses VAS questionnaires on a VR headset. It should be modified in order to implement similar setups.
-
-
+### Unity project for the so-called long real hand illusion. Includes setup GUI, delays webcam feed and uses VAS questionnaires on a VR headset. It should be modified in order to implement similar setups.
 
 IMPORTANT: DO NOT COMMIT TO THE MAIN BRANCH WITHOUT PREVIOUS AUTHORIZATION.
 
-
+Note: For thresholds paradigm refer to: https://github.com/marteroel/Disownership-paradigm-thresholds/
 
 The Unity project includes the following scenes in English. 
 
@@ -20,7 +18,7 @@ The Unity project includes the following scenes in English.
 
 - Stimulation: the actual stimulation, it reads from the ‘Intro’ scene configurations such as delay, whether or not there is white noise on the headphones, duration of the condition, duration before the threat cue, whether to use or not the threat cue and additional settings.
 
-- VAS: the questionnaire that will be presented in the VR headset for particpants. To change the questionnaire edit the questions.csv file located in /Disownership paradigm Unity/Lists/ for Unity Editor mode or in /Lists (you have to create the directory yourself) for standalone mode. The data is logged under /Disownership paradigm Unity/Logs/ for Unity Editor mode or in /Logs (you have to create the directory yourself) for standalone mode.
+- VAS: the questionnaire that will be presented in the VR headset for particpants. To change the questionnaire edit the questions.csv file located in /Disownership paradigm Unity/Lists/ for Unity Editor mode or in /Lists (you have to create the directory yourself) for standalone mode. The data is logged under /Disownership paradigm Unity/Logs/ for Unity Editor mode or in /Logs (you have to create the directory yourself) for standalone mode. The Log file uses the participant ID as the name of the csv file.
 
 - Goodbye: simple UI thanking subjects for their participation. 
 
