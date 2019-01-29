@@ -659,6 +659,103 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &1180558945
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: speedPerStep.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: speedPerStep.Array.data[1]
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[3]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[4]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: speedPerStep.Array.data[2]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: speedPerStep.Array.data[3]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: speedPerStep.Array.data[4]
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1263308640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,12 +1124,12 @@ MonoBehaviour:
   webcamDisplay: {fileID: 768512868}
   serialController: {fileID: 1835912989}
   timedCommands: {fileID: 1835912987}
-  useManualSettings: 0
+  useManualSettings: 1
   manualDelayTime: 0
   manualWebcamIndex: 1
   manualSerialPort: 
-  manualThreatDuration: 10
-  manualSceneDuration: 30
+  manualThreatDuration: 0
+  manualSceneDuration: 240
 --- !u!114 &1835912989
 MonoBehaviour:
   m_ObjectHideFlags: 0
