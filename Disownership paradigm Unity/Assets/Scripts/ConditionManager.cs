@@ -8,9 +8,15 @@ public class ConditionManager : MonoBehaviour {
 	public WebcamDisplay webcamDisplay;
 	public SerialControl serialController;
 
+public bool setDelayManually;
+//	public int manualWebcamId;
+
 	// Use this for initialization
 	void Awake () {
-			webcamDisplay.delayTimeSeconds = ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition];	
+
+		if (!setDelayManually)
+			webcamDisplay.delayTimeSeconds = ConditionSetter.selectedDelayOrder [QuestionManager.currentCondition];
+		
 			serialController.portName = BasicDataConfigurations.selectedSerialPort;
 	}
 }

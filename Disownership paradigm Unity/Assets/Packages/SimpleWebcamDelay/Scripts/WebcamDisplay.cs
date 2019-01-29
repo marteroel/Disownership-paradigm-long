@@ -9,6 +9,7 @@ public class WebcamDisplay : MonoBehaviour {
 	private Texture2D delayedImage;
 	ArrayList myBuffer = new ArrayList();
 
+	public bool setCameraManually;
 	public bool setDelay;
 	public float delayTimeSeconds;
 	public int webcamDeviceID;
@@ -18,7 +19,12 @@ public class WebcamDisplay : MonoBehaviour {
 		WebCamDevice[] devices = WebCamTexture.devices;
 
 		//string deviceName = devices[webcamDeviceID].name;//changed from Unitypackage:
-		string deviceName = devices[BasicDataConfigurations.selectedWebcamDevice].name;
+		string deviceName;
+		if(!setCameraManually)
+			deviceName = devices[BasicDataConfigurations.selectedWebcamDevice].name;
+		else
+			deviceName = devices[webcamDeviceID].name;
+		
 		webcamTexture = new WebCamTexture(deviceName);
 		webcamTexture.Play();
 

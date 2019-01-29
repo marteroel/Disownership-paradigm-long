@@ -1,13 +1,13 @@
 WindowsStandalone
 PlayerPath?
-D:/Data/Lab members/Marte/Real Hand Illusion/Self touch (experiment)/Long/Threat (self touch).exe
+D:/Data/Lab members/Marte/Real Hand Illusion/Self touch (experiment)/Long/Lists/Threat (self touch).exe
 SceneListBegin?
-Assets/Scenes/Goodbye.unity
+Assets/Scenes/Intro.unity
 Assets/Scenes/Instructions.unity
 Assets/Scenes/Inter.unity
-Assets/Scenes/Intro.unity
 Assets/Scenes/Stimulation.unity
 Assets/Scenes/VAS.unity
+Assets/Scenes/Goodbye.unity
 SceneListEnd?
 625d8f8f05fea1c6a405aa9ae41ac1fb Assembly-CSharp.dll:SimpleVAS.QuestionManager
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
