@@ -13,17 +13,18 @@ public class WebcamDisplay : MonoBehaviour {
 	public float delayTimeSeconds;
 	public int webcamDeviceID;
 
-	void Start () {
+	//deleted void Start, now sets the camera from an external script with the SetWebCam function
 		
+	public void SetWebCam(int webcamIndex) {
 		WebCamDevice[] devices = WebCamTexture.devices;
 
+		webcamIndex = BasicDataConfigurations.selectedWebcamDevice;
+
 		//string deviceName = devices[webcamDeviceID].name;//changed from Unitypackage:
-		string deviceName = devices[BasicDataConfigurations.selectedWebcamDevice].name;
+		string deviceName = devices[webcamIndex].name;
 		webcamTexture = new WebCamTexture(deviceName);
 		webcamTexture.Play();
-
 	}
-		
 
 	void Update () {
 		

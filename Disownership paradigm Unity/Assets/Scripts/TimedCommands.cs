@@ -19,11 +19,6 @@ public class TimedCommands : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		if(BasicDataConfigurations.threatTime != 0)
-			timeForThreat = BasicDataConfigurations.threatTime;
-		if(BasicDataConfigurations.conditionDuration != 0)
-			sceneDuration = BasicDataConfigurations.conditionDuration;
-
 		serialController = GetComponent<SerialControl> ();
 
 		StartCoroutine("TriggerStimulationAt");

@@ -238,8 +238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252011c65a4804bfda223e4fcf7bd70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setDelay: 1
-  delayTimeSeconds: 1
+  setDelay: 0
+  delayTimeSeconds: 0
   webcamDeviceID: 0
 --- !u!23 &768512869
 MeshRenderer:
@@ -838,6 +838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1835912986}
   - component: {fileID: 1835912987}
+  - component: {fileID: 1835912988}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -871,3 +872,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Inter
   changeOnKey: 1
+--- !u!114 &1835912988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1835912985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a98fb9339cea8f4696eff5cccb77eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  webcamDisplay: {fileID: 768512868}
+  useManualSettings: 0
+  manualWebcamIndex: 0
