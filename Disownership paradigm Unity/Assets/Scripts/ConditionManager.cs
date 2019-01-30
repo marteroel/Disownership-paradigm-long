@@ -54,4 +54,12 @@ public class ConditionManager : MonoBehaviour {
 			webcamDisplay.SetWebCam (BasicDataConfigurations.selectedWebcamDevice);
 
 	}
+
+
+	void Update () {
+		if(useManualSettings){
+			if (manualDelayTime != webcamDisplay.delayTimeSeconds)
+				webcamDisplay.delayTimeSeconds = manualDelayTime; //sets delay on play
+		}
+	}
 }

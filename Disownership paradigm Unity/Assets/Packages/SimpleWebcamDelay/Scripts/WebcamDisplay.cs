@@ -18,7 +18,7 @@ public class WebcamDisplay : MonoBehaviour {
 	public void SetWebCam(int webcamIndex) {
 		WebCamDevice[] devices = WebCamTexture.devices;
 
-		webcamIndex = BasicDataConfigurations.selectedWebcamDevice;
+		//webcamIndex = BasicDataConfigurations.selectedWebcamDevice;
 
 		//string deviceName = devices[webcamDeviceID].name;//changed from Unitypackage:
 		string deviceName = devices[webcamIndex].name;
