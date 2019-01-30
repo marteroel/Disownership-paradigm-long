@@ -32,6 +32,8 @@ public class ConditionManager : MonoBehaviour {
 			webcamDisplay.delayTimeSeconds = ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition];	
 			serialController.portName = BasicDataConfigurations.selectedSerialPort;
 
+			Debug.Log ("the selected delay is: " + ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition]);
+
 			//timed commands
 			if (BasicDataConfigurations.threatTime != 0)
 				timedCommands.timeForThreat = BasicDataConfigurations.threatTime;
@@ -46,12 +48,19 @@ public class ConditionManager : MonoBehaviour {
 	}
 
 	void Start() {
-		
+
 		if (useManualSettings) 
 			webcamDisplay.SetWebCam (manualWebcamIndex);
 
 		else 
 			webcamDisplay.SetWebCam (BasicDataConfigurations.selectedWebcamDevice);
 
+	}
+
+	void Update () {
+		if(useManualSettings){
+			if (manualDelayTime != webcamDisplay.delayTimeSeconds)
+				webcamDisplay.delayTimeSeconds = manualDelayTime; //sets delay on play
+		}
 	}
 }

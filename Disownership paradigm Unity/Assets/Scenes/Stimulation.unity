@@ -518,8 +518,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252011c65a4804bfda223e4fcf7bd70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setDelay: 0
-  delayTimeSeconds: 1
+  setDelay: 1
+  delayTimeSeconds: 0
   webcamDeviceID: 0
 --- !u!23 &768512869
 MeshRenderer:
@@ -669,12 +669,12 @@ Prefab:
     - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
         type: 2}
       propertyPath: speedPerStep.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
         type: 2}
       propertyPath: stepsPerSpeed.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
       propertyPath: m_LocalPosition.x
@@ -731,7 +731,7 @@ Prefab:
     - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
         type: 2}
       propertyPath: stepsPerSpeed.Array.data[0]
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
         type: 2}
@@ -752,6 +752,21 @@ Prefab:
         type: 2}
       propertyPath: speedPerStep.Array.data[4]
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114696618326464426, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: portName
+      value: COM9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114273078611310914, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: angle
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: angle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
@@ -1124,12 +1139,12 @@ MonoBehaviour:
   webcamDisplay: {fileID: 768512868}
   serialController: {fileID: 1835912989}
   timedCommands: {fileID: 1835912987}
-  useManualSettings: 1
-  manualDelayTime: 0
+  useManualSettings: 0
+  manualDelayTime: 1
   manualWebcamIndex: 1
   manualSerialPort: 
   manualThreatDuration: 0
-  manualSceneDuration: 240
+  manualSceneDuration: 10000
 --- !u!114 &1835912989
 MonoBehaviour:
   m_ObjectHideFlags: 0

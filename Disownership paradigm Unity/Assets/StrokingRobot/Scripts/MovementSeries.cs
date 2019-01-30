@@ -9,6 +9,9 @@ namespace StrokingRobot{
 		public List<int> stepsPerSpeed;
 		public List<int> speedPerStep;
 
+		[Range(0,90)]
+		public int angle;
+
 		private int currentStep, currentStepRepetition;
 
 
@@ -38,7 +41,7 @@ namespace StrokingRobot{
 				yield return null;
 			}
 
-			robotManager.SendMovementSegment (100, speedPerStep [currentStep], 25);//whole lenght
+			robotManager.SendMovementSegment (100, speedPerStep [currentStep], angle);//whole lenght
 
 			Debug.Log ("told robot something new movement");
 

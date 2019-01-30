@@ -1,8 +1,0 @@
-subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
-subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
-a,a,Female,Rigth handed,0,VAS,self,0,0.3327376
-a,a,Female,Rigth handed,1,VAS,self,0,0.8087214
-subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
-a,a,Female,Rigth handed,0,VAS,self,0,0.5498888
-a,a,Female,Rigth handed,1,VAS,self,0,0.5580069
-subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value

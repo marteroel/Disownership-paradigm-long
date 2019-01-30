@@ -18,11 +18,13 @@ public class ConditionSetter : MonoBehaviour {
 		for (int i = 0; i < eachCondition.Length; i++) {
 
 			selectedConditionOrder.Add(eachCondition [i].text);
-
+					
 			if (delayPerCondition[i].text != "")
 				selectedDelayOrder.Add (float.Parse (delayPerCondition [i].text));
 			else
 				selectedDelayOrder.Add (0f);
+
+			//Debug.Log(selectedDelayOrder[i]);
 		}
 			
 	}
