@@ -571,6 +571,8 @@ MonoBehaviour:
   speed: 2
   angle: 25
   totalTime: 0
+  readyToReceiveCommands: 0
+  acknowledgedInstruction: 0
 --- !u!114 &802638610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,7 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc5f48af2cffd747a079fe8c632e2c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portName: COM7
+  portName: COM15
   baudRate: 115200
   messageListener: {fileID: 802638605}
   reconnectionDelay: 1000
