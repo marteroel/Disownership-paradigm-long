@@ -11,11 +11,11 @@ namespace SimpleVAS {
 		public InputField nameField, ageField, conditionDurationField, threatTimeField;//added  conditionDurationField, threatTimeField
 		public Text genderField, handednessField;
 		public Button nextButton;
-		public Toggle calibrationToggle, soundToggle, threatCueToggle;//added soundToggle and threatCueToggle
+		public Toggle calibrationToggle, soundToggle, threatCueToggle, finishOnDurationToggle;//added soundToggle and threatCueToggle
 		//added
 		public Dropdown webcamDevice, serialDropdown;
 		public static string ID, age, gender, handedness, conditionOrder;
-		public static bool useCalibration, useSound, useThreatCue;//added useSound & useThreatCue
+		public static bool useCalibration, useSound, useThreatCue, finishOnduration;//added useSound & useThreatCue
 		//added
 		public static int selectedWebcamDevice;
 		public static string selectedSerialPort;
@@ -33,8 +33,12 @@ namespace SimpleVAS {
 			if (PlayerPrefs.GetInt ("use threat") == 1)	threatCueToggle.isOn = true;
 			else	threatCueToggle.isOn = false;
 
+            if (PlayerPrefs.GetInt("finish on duration") == 1) finishOnDurationToggle.isOn = true;
+            else finishOnDurationToggle.isOn = false;
+
 			conditionDurationField.text = PlayerPrefs.GetFloat("condition duration").ToString();
 			threatTimeField.text = PlayerPrefs.GetFloat("threat time").ToString();
+            
 		}
 		
 		// Update is called once per frame
@@ -56,6 +60,7 @@ namespace SimpleVAS {
 			gender = genderField.text;
 			handedness = handednessField.text;
 			useCalibration = calibrationToggle.isOn;
+            finishOnduration = finishOnDurationToggle.isOn;
 
 			//added
 			selectedWebcamDevice = webcamDevice.value;
@@ -84,8 +89,13 @@ namespace SimpleVAS {
 			if (threatCueToggle.isOn) 	PlayerPrefs.SetInt ("use threat", 1);
 			else PlayerPrefs.SetInt ("use threat", 0);
 
-			PlayerPrefs.SetFloat ("condition duration", conditionDuration);
+            if (finishOnDurationToggle.isOn) PlayerPrefs.SetInt("finish on duration", 1);
+            else PlayerPrefs.SetInt("finish on duration", 0);
+
+            PlayerPrefs.SetFloat ("condition duration", conditionDuration);
 			PlayerPrefs.SetFloat ("threat time", threatTime);
+
+
 
 		}
 

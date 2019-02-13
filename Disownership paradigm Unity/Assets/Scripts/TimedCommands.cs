@@ -24,7 +24,9 @@ public class TimedCommands : MonoBehaviour {
 		serialController = GetComponent<SerialControl> ();
 
 		StartCoroutine("TriggerStimulationAt");
-		StartCoroutine("LoadSceneAt");	
+
+        if(BasicDataConfigurations.finishOnduration)
+		    StartCoroutine("LoadSceneAt");	
 
 		if (BasicDataConfigurations.useThreatCue)	stimulationCue.SetActive (true);
 		else	stimulationCue.SetActive (false);
