@@ -11,6 +11,7 @@ public class TimedCommands : MonoBehaviour {
 	public string sceneToLoad;
 	public GameObject stimulationCue;
 	public Color stimulationCueColor;
+    public GameObject fadePanel;
 
 	private SerialControl serialController;
 	public OscMessageManager oscMessageManager;
@@ -19,6 +20,7 @@ public class TimedCommands : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        fadePanel.SetActive(false);
 		serialController = GetComponent<SerialControl> ();
 
 		StartCoroutine("TriggerStimulationAt");
@@ -58,7 +60,8 @@ public class TimedCommands : MonoBehaviour {
 
 		yield return new WaitForFixedTime (sceneDuration);
 		SceneManager.LoadScene (sceneToLoad);
-	}
+        fadePanel.SetActive(true);
+    }
 
 
 }

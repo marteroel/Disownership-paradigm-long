@@ -709,7 +709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 30e94eca1f948fc408642ebc47351943, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -863,7 +863,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1815294833}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31957ab02a8654b448736febf48c16e9, type: 3}
   m_Name: 
@@ -1012,6 +1012,7 @@ MonoBehaviour:
   sceneToLoad: VAS
   stimulationCue: {fileID: 285611223}
   stimulationCueColor: {r: 1, g: 0, b: 0, a: 1}
+  fadePanel: {fileID: 1263308640}
   oscMessageManager: {fileID: 1835912990}
 --- !u!114 &1835912988
 MonoBehaviour:
@@ -1029,10 +1030,10 @@ MonoBehaviour:
   timedCommands: {fileID: 1835912987}
   useManualSettings: 0
   manualDelayTime: 0
-  manualWebcamIndex: 1
+  manualWebcamIndex: 0
   manualSerialPort: 
-  manualThreatDuration: 10
-  manualSceneDuration: 30
+  manualThreatDuration: 8
+  manualSceneDuration: 10
 --- !u!114 &1835912989
 MonoBehaviour:
   m_ObjectHideFlags: 0
