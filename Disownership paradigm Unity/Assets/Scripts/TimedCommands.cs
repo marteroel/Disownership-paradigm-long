@@ -17,8 +17,15 @@ public class TimedCommands : MonoBehaviour {
 	public OscMessageManager oscMessageManager;
 	private string threatMessage;
 
-	// Use this for initialization
-	void Start () {
+    public static TimedCommands instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+    }
+    // Use this for initialization
+    void Start () {
 
         fadePanel.SetActive(false);
 		serialController = GetComponent<SerialControl> ();

@@ -159,7 +159,6 @@ C:\Users\Marte\Documents\Projects\Unity\Threat (self touch)\Temp\bin\Debug\Unity
 C:\Users\Marte\Documents\Projects\Unity\Threat (self touch)\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\Marte\Documents\Projects\Unity\Threat (self touch)\obj\Debug\Assembly-CSharp.dll
 C:\Users\Marte\Documents\Projects\Unity\Threat (self touch)\obj\Debug\Assembly-CSharp.pdb
-C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\obj\Debug\Assembly-CSharp.dll
 C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\Temp\bin\Debug\Assembly-CSharp.dll
 C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\Temp\bin\Debug\Assembly-CSharp.pdb
@@ -320,3 +319,11 @@ C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm
 C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
 C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\Temp\bin\Debug\System.Core.dll
+C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\Temp\bin\Debug\System.dll
+C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\Temp\bin\Debug\System.Runtime.Serialization.dll
+C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\Temp\bin\Debug\System.Xml.dll
+C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\Temp\bin\Debug\System.Xml.Linq.dll
+C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Marte\Documents\GitHub\Disownership-paradigm-long\Disownership paradigm Unity\obj\Debug\Assembly-CSharp.csproj.CopyComplete

@@ -6,81 +6,79 @@ using UnityEngine.SceneManagement;
 using SimpleVAS;
 
 public class EmbeddedQuestionManager : MonoBehaviour
+{
+
+    List<string> questionList = new List<string>();
+
+    public Text questionUI;
+    public Button nextButton;
+    public Scrollbar scrollValue;
+    public GameObject handle;//added
+    public CsvWrite csvWriter;
+    public int numberOfRepetitions;
+    public bool useSceneManually;
+
+    private int currentItem;
+
+    private int currentRepetition;
+
+    // Use this for initialization
+    void Start()
     {
+        currentItem = 0;
+        questionList = CsvRead.questionnaireInput;
+        questionUI.text = questionList[currentItem];
+        nextButton.interactable = false;
+        handle.gameObject.SetActive(false);//added
+    }
 
-        List<string> questionList = new List<string>();
-
-        public Text questionUI;
-        public Button nextButton;
-        public Scrollbar scrollValue;
-        public GameObject handle;//added
-
-        public CsvWrite csvWriter;
-        public int numberOfRepetitions;
-
-        public static string questionnaireItem, VASvalue;
-
-        private int currentItem;
-
-        private int currentRepetition;
-
-        // Use this for initialization
-        void Start()
-        {
-
-            currentItem = 0;
-            questionList = CsvRead.questionnaireInput;
-            questionUI.text = questionList[currentItem];
-            nextButton.interactable = false;
-            handle.gameObject.SetActive(false);//added
-
-        }
-
-        public void OnSelection()
-        {
-            handle.gameObject.SetActive(true);//added
-            Debug.Log("selected");
-            nextButton.gameObject.SetActive(true);
-            nextButton.interactable = true;   
-        }
+    public void OnSelection()
+    {
+        handle.gameObject.SetActive(true);//added
+        nextButton.interactable = true;   
+    }
 
 
     public void OnNextButton() {
 
-        Debug.Log("next button turned");
         nextButton.interactable = false;
-        nextButton.gameObject.SetActive(false);
-        questionnaireItem = currentItem.ToString();
+        
+        QuestionManager.questionnaireItem = currentItem.ToString();
+        QuestionManager.VASvalue = scrollValue.value.ToString();
 
-        VASvalue = scrollValue.value.ToString();
+        Debug.Log(QuestionManager.questionnaireItem);
+        Debug.Log(QuestionManager.VASvalue);
 
-        csvWriter.onNextButtonPressed();
-
-        currentItem++;
-        handle.gameObject.SetActive(false);//added
-
+        if(!useSceneManually)
+            csvWriter.onNextButtonPressed();
+        
+         currentItem++;
+         handle.gameObject.SetActive(false);
+    
         if (currentItem < questionList.Count) { 
-        questionUI.text = questionList[currentItem];
-        Debug.Log("this should be the case, with item of the questionnaire no: " + currentItem);
-     }
+            questionUI.text = questionList[currentItem];
+        }
 
-            else if (currentItem == questionList.Count)
-            {
-                currentItem = 0;
-                questionList.Clear();
+        else if (currentItem == questionList.Count) {
+          currentItem = 0;
 
-                currentRepetition++;
+          currentRepetition++;
 
-            if (currentRepetition < numberOfRepetitions)
-            {
-                questionList = CsvRead.questionnaireInput;
-                Debug.Log("reading the next item");
-            }
-            if (currentRepetition == numberOfRepetitions) {
-                if (!BasicDataConfigurations.finishOnduration)
-                    SceneLoaderForStimulation.instance.LoadScene("VAS");
-                else questionUI.text = "no more content to show"; 
+         if (currentRepetition < numberOfRepetitions) 
+             questionUI.text = questionList[currentItem];
+
+         else if (currentRepetition == numberOfRepetitions) {
+                if (!useSceneManually) {
+                    if (!BasicDataConfigurations.finishOnduration)
+                        SceneLoaderForStimulation.instance.LoadScene();
+                    else questionUI.text = "no more content to show";
+                }
+
+                else {
+                    Debug.Log("done testing");
+                    questionUI.text = "no more content to show";
                 }
             }
-        }
+         }
     }
+}

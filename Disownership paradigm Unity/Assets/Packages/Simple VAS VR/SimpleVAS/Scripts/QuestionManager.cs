@@ -18,6 +18,9 @@ namespace SimpleVAS
 
 		public CsvWrite csvWriter;
 
+        //added
+        public string stimulationConditionName;
+
 		public bool isForcedChoice;
 		public ToggleGroup toggleGroup;
 
@@ -47,7 +50,7 @@ namespace SimpleVAS
 
 
 		public void OnNextButton() {
-		
+
 			nextButton.interactable = false;
 			questionnaireItem = currentItem.ToString ();
 			if (!isForcedChoice)
