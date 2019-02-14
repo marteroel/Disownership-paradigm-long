@@ -15,3 +15,4 @@ A,A,Female,Rigth handed,0,VAS,self,0,0.5303178
 A,A,Female,Rigth handed,1,VAS,self,0,0.5930895
 subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
 a,a,Female,Rigth handed,0,VAS,self,0,0.4832098
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value

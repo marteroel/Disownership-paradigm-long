@@ -18,6 +18,8 @@ public class EmbeddedQuestionManager : MonoBehaviour
     public int numberOfRepetitions;
     public bool useSceneManually;
 
+    public GameObject uiObject;
+
     private int currentItem;
 
     private int currentRepetition;
@@ -30,12 +32,19 @@ public class EmbeddedQuestionManager : MonoBehaviour
         questionUI.text = questionList[currentItem];
         nextButton.interactable = false;
         handle.gameObject.SetActive(false);//added
+        uiObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown("space"))
+            uiObject.SetActive(true);
     }
 
     public void OnSelection()
     {
         handle.gameObject.SetActive(true);//added
-        nextButton.interactable = true;   
+        nextButton.interactable = true;
     }
 
 
@@ -46,8 +55,6 @@ public class EmbeddedQuestionManager : MonoBehaviour
         QuestionManager.questionnaireItem = currentItem.ToString();
         QuestionManager.VASvalue = scrollValue.value.ToString();
 
-        Debug.Log(QuestionManager.questionnaireItem);
-        Debug.Log(QuestionManager.VASvalue);
 
         if(!useSceneManually)
             csvWriter.onNextButtonPressed();
@@ -61,13 +68,14 @@ public class EmbeddedQuestionManager : MonoBehaviour
 
         else if (currentItem == questionList.Count) {
           currentItem = 0;
+           
+            currentRepetition++;
+            
 
-          currentRepetition++;
-
-         if (currentRepetition < numberOfRepetitions) 
+            if (currentRepetition < numberOfRepetitions) 
              questionUI.text = questionList[currentItem];
 
-         else if (currentRepetition == numberOfRepetitions) {
+            else if (currentRepetition == numberOfRepetitions) {
                 if (!useSceneManually) {
                     if (!BasicDataConfigurations.finishOnduration)
                         SceneLoaderForStimulation.instance.LoadScene();
@@ -78,7 +86,16 @@ public class EmbeddedQuestionManager : MonoBehaviour
                     Debug.Log("done testing");
                     questionUI.text = "no more content to show";
                 }
+                
             }
-         }
+            StartCoroutine(TurnOffUI());
+        }
+    }
+
+    private IEnumerator TurnOffUI()
+    {
+        yield return null;
+       // yield return new WaitForSeconds(1f);
+        uiObject.SetActive(false);
     }
 }

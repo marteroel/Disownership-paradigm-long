@@ -79,6 +79,7 @@ using VRStandardAssets.Menu;
 				elapsedSinceGazed = 0; //restart time count
 
 			}
+
 		}	
 		
 
@@ -86,8 +87,8 @@ using VRStandardAssets.Menu;
 			m_InteractiveItem.OnOver -= HandleOver;
 			m_InteractiveItem.OnOut -= HandleOut;
 			m_SelectionRadial.OnSelectionComplete -= HandleSelectionComplete;
-
-		}
+            m_GazeOver = false;//added
+    }
 
 
 		private void HandleOver() {

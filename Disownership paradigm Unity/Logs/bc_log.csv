@@ -1,0 +1,14 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
+bc,77,Female,Rigth handed,0,Stimulation wVAS,self,0,0.5204079
+bc,77,Female,Rigth handed,1,Stimulation wVAS,self,0,0.6422684
+bc,77,Female,Rigth handed,0,Stimulation wVAS,self,0,0.4146579
+bc,77,Female,Rigth handed,1,Stimulation wVAS,self,0,0.6284851
+bc,77,Female,Rigth handed,0,VAS,self,0,0.4747283
+bc,77,Female,Rigth handed,1,VAS,self,0,0.6022179
+bc,77,Female,Rigth handed,2,VAS,self,0,0.5345777
+bc,77,Female,Rigth handed,3,VAS,self,0,0.5381843
+bc,77,Female,Rigth handed,0,Stimulation wVAS,self,0,0.780185
+bc,77,Female,Rigth handed,1,Stimulation wVAS,self,0,0.5044331
+bc,77,Female,Rigth handed,0,Stimulation wVAS,self,0,0.5927714
+bc,77,Female,Rigth handed,1,Stimulation wVAS,self,0,0.4726604
+bc,77,Female,Rigth handed,0,VAS,self,0,0.5492136
