@@ -24,3 +24,12 @@ a,b,Female,Rigth handed,1,Stimulation wVAS,self,0,0.5367302
 subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
 a,a,Female,Rigth handed,0,Stimulation wVAS,self,1,0.4782768
 a,a,Female,Rigth handed,1,Stimulation wVAS,self,1,0.5589057
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
+a,v,Female,Rigth handed,0,Stimulation wVAS,self,1,0.5411448
+a,v,Female,Rigth handed,1,Stimulation wVAS,self,1,0.1486003
+a,v,Female,Rigth handed,0,Stimulation wVAS,self,1,0.738332
+a,v,Female,Rigth handed,1,Stimulation wVAS,self,1,0.2959338
+a,v,Female,Rigth handed,0,VAS,self,1,0.6971885
+a,v,Female,Rigth handed,1,VAS,self,1,0.4862817
+a,v,Female,Rigth handed,0,Stimulation wVAS,self,0,0.3273101
+a,v,Female,Rigth handed,1,Stimulation wVAS,self,0,0.5092853

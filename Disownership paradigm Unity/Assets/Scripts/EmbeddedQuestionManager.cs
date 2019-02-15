@@ -19,6 +19,7 @@ public class EmbeddedQuestionManager : MonoBehaviour
     public bool useSceneManually;
 
     public GameObject uiObject;
+    public GameObject guiReticle;
 
     private int currentItem;
 
@@ -33,12 +34,15 @@ public class EmbeddedQuestionManager : MonoBehaviour
         nextButton.interactable = false;
         handle.gameObject.SetActive(false);//added
         uiObject.SetActive(false);
+        guiReticle.SetActive(false);
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space")) { 
             uiObject.SetActive(true);
+            guiReticle.SetActive(true);
+        }
     }
 
     public void OnSelection()
@@ -77,8 +81,10 @@ public class EmbeddedQuestionManager : MonoBehaviour
 
             else if (currentRepetition == numberOfRepetitions) {
                 if (!useSceneManually) {
-                    if (!BasicDataConfigurations.finishOnduration)
+                    if (!BasicDataConfigurations.finishOnduration) {
                         SceneLoaderForStimulation.instance.LoadScene();
+                        questionList.Clear();
+                    }
                     else questionUI.text = "no more content to show";
                 }
 
@@ -88,14 +94,9 @@ public class EmbeddedQuestionManager : MonoBehaviour
                 }
                 
             }
-            StartCoroutine(TurnOffUI());
+            uiObject.SetActive(false);
+            guiReticle.SetActive(false);
         }
     }
 
-    private IEnumerator TurnOffUI()
-    {
-        yield return null;
-       // yield return new WaitForSeconds(1f);
-        uiObject.SetActive(false);
-    }
 }
