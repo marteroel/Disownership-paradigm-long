@@ -83,7 +83,10 @@ public class EmbeddedQuestionManager : MonoBehaviour
             else if (currentRepetition == numberOfRepetitions) {
                 if (!useSceneManually) {
                     if (!BasicDataConfigurations.finishOnduration)
+                    {
                         SceneLoaderForStimulation.instance.LoadScene();
+                        questionList.Clear();
+                    }
                     else questionUI.text = "no more content to show";
                 }
 
