@@ -2715,7 +2715,7 @@ MonoBehaviour:
   webcamDisplay: {fileID: 768512868}
   serialController: {fileID: 1835912989}
   timedCommands: {fileID: 1835912987}
-  useManualSettings: 1
+  useManualSettings: 0
   manualDelayTime: 0
   manualWebcamIndex: 0
   manualSerialPort: 

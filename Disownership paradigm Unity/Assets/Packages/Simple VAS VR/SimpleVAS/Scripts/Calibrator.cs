@@ -6,7 +6,10 @@ using UnityEngine.XR;
 namespace SimpleVAS {
 		public class Calibrator : MonoBehaviour {
 
-		void Start(){
+        //changed from Start to Awake
+        //void Start(){
+        void Awake()
+        {
 			if (BasicDataConfigurations.useCalibration)
 				InputTracking.disablePositionalTracking = true;
 		}
