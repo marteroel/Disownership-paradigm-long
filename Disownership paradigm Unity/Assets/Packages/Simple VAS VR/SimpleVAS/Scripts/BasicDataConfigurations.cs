@@ -11,11 +11,11 @@ namespace SimpleVAS {
 		public InputField nameField, ageField, conditionDurationField, threatTimeField;//added  conditionDurationField, threatTimeField
 		public Text genderField, handednessField;
 		public Button nextButton;
-		public Toggle calibrationToggle, soundToggle, threatCueToggle, finishOnDurationToggle;//added soundToggle and threatCueToggle
+		public Toggle calibrationToggle, soundToggle, threatCueToggle, finishOnDurationToggle, embedVASToggle;//added soundToggle and threatCueToggle
 		//added
 		public Dropdown webcamDevice, serialDropdown;
 		public static string ID, age, gender, handedness, conditionOrder;
-		public static bool useCalibration, useSound, useThreatCue, finishOnduration;//added useSound & useThreatCue
+		public static bool useCalibration, useSound, useThreatCue, finishOnduration, embedVAS;//added useSound & useThreatCue
 		//added
 		public static int selectedWebcamDevice;
 		public static string selectedSerialPort;
@@ -36,7 +36,10 @@ namespace SimpleVAS {
             if (PlayerPrefs.GetInt("finish on duration") == 1) finishOnDurationToggle.isOn = true;
             else finishOnDurationToggle.isOn = false;
 
-			conditionDurationField.text = PlayerPrefs.GetFloat("condition duration").ToString();
+            if (PlayerPrefs.GetInt("embed VAS") == 1) embedVASToggle.isOn = true;
+            else embedVASToggle.isOn = false;
+
+            conditionDurationField.text = PlayerPrefs.GetFloat("condition duration").ToString();
 			threatTimeField.text = PlayerPrefs.GetFloat("threat time").ToString();
             
 		}
@@ -70,8 +73,10 @@ namespace SimpleVAS {
 			else	useSound = false;
 			if (threatCueToggle.isOn)	useThreatCue = true;
 			else	useThreatCue = false;
+            if (embedVASToggle.isOn) embedVAS = true;
+            else embedVAS = false;
 
-			conditionDuration = float.Parse (conditionDurationField.text);
+            conditionDuration = float.Parse (conditionDurationField.text);
 			threatTime = float.Parse (threatTimeField.text);
 
 			storePreferences ();
@@ -90,6 +95,9 @@ namespace SimpleVAS {
 			else PlayerPrefs.SetInt ("use threat", 0);
 
             if (finishOnDurationToggle.isOn) PlayerPrefs.SetInt("finish on duration", 1);
+            else PlayerPrefs.SetInt("finish on duration", 0);
+
+            if (embedVASToggle.isOn) PlayerPrefs.SetInt("finish on duration", 1);
             else PlayerPrefs.SetInt("finish on duration", 0);
 
             PlayerPrefs.SetFloat ("condition duration", conditionDuration);

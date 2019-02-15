@@ -1688,6 +1688,7 @@ GameObject:
   - component: {fileID: 1627059989}
   - component: {fileID: 1627059988}
   - component: {fileID: 1627059990}
+  - component: {fileID: 1627059991}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -1732,6 +1733,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Stimulation wVAS
   changeOnKey: 1
+--- !u!114 &1627059991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627059987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd4066eeb830a2240b8e8b3059f8bea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneLoader: {fileID: 1627059990}
+  sceneWithoutEmbeddedVAS: Stimulation
+  sceneWithEmbeddedVAS: Stimulation wVAS
 --- !u!1 &1709006868
 GameObject:
   m_ObjectHideFlags: 0
