@@ -97,7 +97,7 @@ namespace SimpleVAS {
             if (finishOnDurationToggle.isOn) PlayerPrefs.SetInt("finish on duration", 1);
             else PlayerPrefs.SetInt("finish on duration", 0);
 
-            if (embedVASToggle.isOn) PlayerPrefs.SetInt("finish on duration", 1);
+            if (embedVASToggle.isOn) PlayerPrefs.SetInt("embed VAS", 1);
             else PlayerPrefs.SetInt("finish on duration", 0);
 
             PlayerPrefs.SetFloat ("condition duration", conditionDuration);

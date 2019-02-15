@@ -2899,7 +2899,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &355462687
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7214,7 +7214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1137547111
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8407,13 +8407,9 @@ MonoBehaviour:
   eachCondition:
   - {fileID: 1394922147}
   - {fileID: 450444783}
-  - {fileID: 142442529}
-  - {fileID: 1435499180}
   delayPerCondition:
   - {fileID: 282558649}
   - {fileID: 1442429365}
-  - {fileID: 1137547112}
-  - {fileID: 1886620131}
 --- !u!1 &1388538175
 GameObject:
   m_ObjectHideFlags: 0
@@ -9918,7 +9914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 45, y: -49}
+  m_AnchoredPosition: {x: 45, y: -92}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1525243272
@@ -12341,7 +12337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1886620130
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12476,7 +12472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1887844621
 RectTransform:
   m_ObjectHideFlags: 0

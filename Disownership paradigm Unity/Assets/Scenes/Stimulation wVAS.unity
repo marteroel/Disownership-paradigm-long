@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Strongly disagree
+  m_Text: Gar nicht
 --- !u!222 &194106891
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -548,7 +548,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Strongly agree
+  m_Text: Gar Sehr
 --- !u!222 &401722298
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -851,7 +851,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 480303932}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
   m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
@@ -859,10 +859,10 @@ RectTransform:
   - {fileID: 687180397}
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 900, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &480303938
@@ -881,7 +881,7 @@ MonoBehaviour:
   scrollValue: {fileID: 301110658}
   handle: {fileID: 807033300}
   csvWriter: {fileID: 937784099}
-  numberOfRepetitions: 2
+  numberOfRepetitions: 4
   useSceneManually: 0
   uiObject: {fileID: 687180396}
 --- !u!1 &616600230
@@ -2347,7 +2347,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Accept
+  m_Text: Weiter
 --- !u!222 &1722827479
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2715,7 +2715,7 @@ MonoBehaviour:
   webcamDisplay: {fileID: 768512868}
   serialController: {fileID: 1835912989}
   timedCommands: {fileID: 1835912987}
-  useManualSettings: 1
+  useManualSettings: 0
   manualDelayTime: 0
   manualWebcamIndex: 0
   manualSerialPort: 
