@@ -884,6 +884,7 @@ MonoBehaviour:
   numberOfRepetitions: 4
   useSceneManually: 0
   uiObject: {fileID: 687180396}
+  guiReticle: {fileID: 1351263112}
 --- !u!1 &616600230
 GameObject:
   m_ObjectHideFlags: 0

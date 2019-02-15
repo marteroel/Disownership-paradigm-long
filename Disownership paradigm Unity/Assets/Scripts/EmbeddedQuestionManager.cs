@@ -19,6 +19,7 @@ public class EmbeddedQuestionManager : MonoBehaviour
     public bool useSceneManually;
 
     public GameObject uiObject;
+    public GameObject guiReticle;
 
     private int currentItem;
 
@@ -33,12 +34,16 @@ public class EmbeddedQuestionManager : MonoBehaviour
         nextButton.interactable = false;
         handle.gameObject.SetActive(false);//added
         uiObject.SetActive(false);
+        guiReticle.SetActive(false);
     }
 
     private void Update()
     {
         if (Input.GetKeyDown("space"))
+        {
             uiObject.SetActive(true);
+            guiReticle.SetActive(true);
+        }
     }
 
     public void OnSelection()
@@ -97,5 +102,6 @@ public class EmbeddedQuestionManager : MonoBehaviour
         yield return null;
        // yield return new WaitForSeconds(1f);
         uiObject.SetActive(false);
+        guiReticle.SetActive(false);
     }
 }
