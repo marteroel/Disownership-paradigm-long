@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252011c65a4804bfda223e4fcf7bd70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setDelay: 0
+  setDelay: 1
   delayTimeSeconds: 1
   webcamDeviceID: 0
 --- !u!23 &768512869
