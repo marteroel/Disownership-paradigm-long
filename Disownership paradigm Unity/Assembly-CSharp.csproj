@@ -321,6 +321,7 @@
     <Compile Include="Assets\Scripts\ConditionInstructions.cs" />
     <Compile Include="Assets\Scripts\ConditionManager.cs" />
     <Compile Include="Assets\Scripts\ConditionSetter.cs" />
+    <Compile Include="Assets\Scripts\DefaultCalibration.cs" />
     <Compile Include="Assets\Scripts\EmbeddedQuestionManager.cs" />
     <Compile Include="Assets\Scripts\OscMessageManager.cs" />
     <Compile Include="Assets\Scripts\PlaySound.cs" />
