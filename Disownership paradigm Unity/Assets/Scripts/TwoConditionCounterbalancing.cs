@@ -10,6 +10,12 @@ public class TwoConditionCounterbalancing : MonoBehaviour {
     private float[] order1 = { 0f, 1f, 0f, 1f, 0f, 1f };
     private float[] order2 = { 1f, 0f, 1f, 0f, 1f, 0f };
 
+    private void Start() {
+        for (int i = 0; i < delayPerCondition.Length; i++)
+        {
+            delayPerCondition[i].text = order1[i].ToString();//sets default order
+        }
+    }
     public void SetConditionOrder() {
 
         Debug.Log("setting condition order");
@@ -22,9 +28,7 @@ public class TwoConditionCounterbalancing : MonoBehaviour {
             selectedOrderArray = order2;
 
         for (int i = 0; i < delayPerCondition.Length; i++) {
-            Debug.Log(selectedOrderArray[i]);
             delayPerCondition[i].text = selectedOrderArray[i].ToString();
-            
         }
     }
 }

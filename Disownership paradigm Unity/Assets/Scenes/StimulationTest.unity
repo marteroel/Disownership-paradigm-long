@@ -571,7 +571,7 @@ Prefab:
     - target: {fileID: 114696618326464426, guid: 2fbd624b46a8afd4fab3946118f00e85,
         type: 2}
       propertyPath: DebugMessages
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
