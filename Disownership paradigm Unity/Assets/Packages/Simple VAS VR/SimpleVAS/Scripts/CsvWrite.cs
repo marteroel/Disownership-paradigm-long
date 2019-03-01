@@ -41,7 +41,7 @@ namespace SimpleVAS
 			//Changed from package
 			//WriteToFile (BasicDataConfigurations.ID, BasicDataConfigurations.age, BasicDataConfigurations.gender, BasicDataConfigurations.handedness, QuestionManager.questionnaireItem,  SceneManager.GetActiveScene().name, ConditionDictionary.selectedOrder[QuestionManager.currentCondition], QuestionManager.VASvalue);
 			WriteToFile (BasicDataConfigurations.ID, BasicDataConfigurations.age, BasicDataConfigurations.gender, BasicDataConfigurations.handedness, QuestionManager.questionnaireItem,  
-				SceneManager.GetActiveScene().name, ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition], ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition].ToString(), QuestionManager.VASvalue);
+				SceneManager.GetActiveScene().name, QuestionManager.currentCondition.ToString(), ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition].ToString(), QuestionManager.VASvalue);
 		}
 
 		void LoadNull(){
