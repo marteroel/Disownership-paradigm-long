@@ -63,7 +63,7 @@ namespace StrokingRobot{
 			}
 
 			robotManager.ClearNumberSegment ();
-			Debug.Log ("told robot to clear");
+			//Debug.Log ("told robot to clear");
 
 			while (!robotManager.acknowledgedInstruction){
 				yield return null;
@@ -72,16 +72,17 @@ namespace StrokingRobot{
 			robotManager.SendMovementSegment (100, speedPerStep [currentStep], 25);//whole lenght
 
 
-            Debug.Log ("told robot something new movement");
+           // Debug.Log ("told robot something new movement");
 
 			while (!robotManager.acknowledgedInstruction){
 				yield return null;
 			}
 			
 			robotManager.StartMovement ();
+
             if (sendMessagesToServer)
                 tcpCommunicator.SendTCPMessage("begin trial at speed: " + speedPerStep[currentStep].ToString());
-            Debug.Log ("told robot to start moving");
+            //Debug.Log ("told robot to start moving");
 
 			currentStepRepetition++;
 

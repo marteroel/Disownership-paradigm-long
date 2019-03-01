@@ -232,6 +232,16 @@ Prefab:
       propertyPath: tempPort
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114696618326464426, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: DebugMessages
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114273078611310914, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: sendMessagesToServer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
@@ -1303,7 +1313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeForThreat: 6
-  sceneDuration: 10
+  sceneDuration: 20
   sceneToLoad: VAS
   stimulationCue: {fileID: 285611223}
   stimulationCueColor: {r: 1, g: 0, b: 0, a: 1}
@@ -1364,7 +1374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd3e42b515b51a4cb4bfe2a5c403aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sendMessagesToServer: 0
+  sendMessagesToServer: 1
   stepsPerSpeed: 02000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
   speedPerStep: 09000000100000000a0000000f0000000b0000000e0000000d0000000c00000010000000090000000f0000000a0000000e0000000b0000000d0000000c000000
 --- !u!114 &1835912992
