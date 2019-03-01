@@ -1,25 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SimpleVAS;//added
 
 namespace StrokingRobot{
 	public class MovementSeries : MonoBehaviour {
 
 		private RobotManagerArvity robotManager;
+
+        public bool sendMessagesToServer;
+
 		public List<int> stepsPerSpeed;
 		public List<int> speedPerStep;
 
 		private int currentStep, currentStepRepetition;
+        private TCPClient tcpCommunicator;
 
         private void Awake()
         {
             robotManager = (RobotManagerArvity)FindObjectOfType<RobotManagerArvity>();
+            tcpCommunicator = FindObjectOfType<TCPClient>();
         }
         private void Start() //added
         {
-            StartCoroutine(StartMovementTrajectory());
-            currentStep = 0;
-            currentStepRepetition = 0;
+            StartCoroutine(WaitForRobotToBeReady());
         }
 
         void Update() {
@@ -28,6 +32,23 @@ namespace StrokingRobot{
                     currentStep = 0;
                     currentStepRepetition = 0;
                 } */ //commented out for study.
+        }
+
+        //added
+        private IEnumerator WaitForRobotToBeReady()
+        {
+            while (!robotManager.IsReadyToStartMovement()) {
+                yield return null;
+            }
+
+            StartCoroutine(StartMovementTrajectory());
+            currentStep = 0;
+            currentStepRepetition = 0;
+
+            TimedCommands.instance.StartLoadSceneCoroutine();
+
+            if(sendMessagesToServer)
+                tcpCommunicator.SendTCPMessage("start block " + QuestionManager.currentCondition.ToString() + " delay " + ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition].ToString());
         }
 
 
@@ -50,14 +71,17 @@ namespace StrokingRobot{
 
 			robotManager.SendMovementSegment (100, speedPerStep [currentStep], 25);//whole lenght
 
-			Debug.Log ("told robot something new movement");
+
+            Debug.Log ("told robot something new movement");
 
 			while (!robotManager.acknowledgedInstruction){
 				yield return null;
 			}
 			
 			robotManager.StartMovement ();
-			Debug.Log ("told robot to start moving");
+            if (sendMessagesToServer)
+                tcpCommunicator.SendTCPMessage("begin trial at speed: " + speedPerStep[currentStep].ToString());
+            Debug.Log ("told robot to start moving");
 
 			currentStepRepetition++;
 

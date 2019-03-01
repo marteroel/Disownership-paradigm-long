@@ -963,6 +963,7 @@ GameObject:
   - component: {fileID: 1835912987}
   - component: {fileID: 1835912988}
   - component: {fileID: 1835912989}
+  - component: {fileID: 1835912990}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -1021,5 +1022,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd3e42b515b51a4cb4bfe2a5c403aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stepsPerSpeed: 05000000
-  speedPerStep: 0e000000
+  stepsPerSpeed: 02000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
+  speedPerStep: 09000000100000000a0000000f0000000b0000000e0000000d0000000c00000010000000090000000f0000000a0000000e0000000b0000000d0000000c000000
+--- !u!114 &1835912990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1835912985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04a2a07c0734764a9e03ac59812224e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ip: 
+  isConnected: 0

@@ -13,8 +13,10 @@ public class TimedCommands : MonoBehaviour {
 	public Color stimulationCueColor;
     public GameObject fadePanel;
 
-	private SerialControl serialController;
-	public OscMessageManager oscMessageManager;
+	//private SerialControl serialController; //COMMENTED OUT FOR SERIAL ROBOT
+    private TCPClient tcpCommunicator;
+
+    public OscMessageManager oscMessageManager;
 	private string threatMessage;
 
     public static TimedCommands instance;
@@ -23,17 +25,19 @@ public class TimedCommands : MonoBehaviour {
     {
         if (instance == null)
             instance = this;
+
+        tcpCommunicator = FindObjectOfType<TCPClient>();
     }
     // Use this for initialization
     void Start () {
 
         fadePanel.SetActive(false);
-		serialController = GetComponent<SerialControl> ();
+		//serialController = GetComponent<SerialControl> (); //COMMENTED OUT FOR SERIAL ROBOT
 
-		StartCoroutine("TriggerStimulationAt");
+        StartCoroutine("TriggerStimulationAt");
 
-        if(BasicDataConfigurations.finishOnduration)
-		    StartCoroutine("LoadSceneAt");	
+       // if(BasicDataConfigurations.finishOnduration)
+		 //   StartCoroutine("LoadSceneAt");	//commented out to trigger once robot has began movements.
 
 		if (BasicDataConfigurations.useThreatCue)	stimulationCue.SetActive (true);
 		else	stimulationCue.SetActive (false);
@@ -52,24 +56,28 @@ public class TimedCommands : MonoBehaviour {
 			else
 				threatMessage = "4";
 		}
-
-
 	}
 
 	private IEnumerator TriggerStimulationAt(){
 		
 		yield return new WaitForFixedTime (timeForThreat);
 
-		serialController.WriteToPort(threatMessage);
-		oscMessageManager.OnSendMessage("1");//sends osc message if needed to trigger external application.
+        //serialController.WriteToPort(threatMessage);  //COMMENTED OUT FOR SERIAL ROBOT
+        oscMessageManager.OnSendMessage("1");//sends osc message if needed to trigger external application.
 		stimulationCue.GetComponent<Image>().color = stimulationCueColor;
 	}
 
-	private IEnumerator LoadSceneAt(){
+    public void StartLoadSceneCoroutine()
+    {
+        StartCoroutine(LoadSceneAt());
+    }
 
+	private IEnumerator LoadSceneAt(){//changed to public to trigger from robot scripts
 		yield return new WaitForFixedTime (sceneDuration);
-		SceneManager.LoadScene (sceneToLoad);
+        tcpCommunicator.SendTCPMessage("end block " + QuestionManager.currentCondition.ToString());
+        SceneManager.LoadScene (sceneToLoad);
         fadePanel.SetActive(true);
+        StopAllCoroutines();
     }
 
 

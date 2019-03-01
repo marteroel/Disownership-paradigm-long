@@ -29,10 +29,8 @@ public class ChangePortName : MonoBehaviour {
 
     public string ardityFormattedPort()
     {
-        Debug.Log("this is activated");
         string serialPort = serialDropdown.GetComponentInChildren<Text>().text;
         serialPort = serialPort.Remove(0, 3);
-        Debug.Log(serialPort + " this is the number of the com");
 
         int portNumber = int.Parse(serialPort);
 

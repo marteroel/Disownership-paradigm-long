@@ -6,8 +6,8 @@ using SimpleVAS;
 public class ConditionManager : MonoBehaviour {
 
 	public WebcamDisplay webcamDisplay;
-	public SerialControl serialController;
-	public TimedCommands timedCommands;
+    //public SerialControl serialController; //COMMENTED OUT FOR SERIAL ROBOT
+    public TimedCommands timedCommands;
 
 	public bool useManualSettings;
 	public float manualDelayTime;
@@ -22,18 +22,18 @@ public class ConditionManager : MonoBehaviour {
 
 		if (useManualSettings){
 			webcamDisplay.delayTimeSeconds = manualDelayTime;
-			serialController.portName = manualSerialPort;
+            //serialController.portName = manualSerialPort; //COMMENTED OUT FOR SERIAL ROBOT
 
-			timedCommands.timeForThreat = manualThreatDuration;
+            timedCommands.timeForThreat = manualThreatDuration;
 			timedCommands.sceneDuration = manualSceneDuration;
 		}
 
 		else {
-			webcamDisplay.delayTimeSeconds = ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition];	
-			serialController.portName = BasicDataConfigurations.selectedSerialPort;
+			webcamDisplay.delayTimeSeconds = ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition];
+            //serialController.portName = BasicDataConfigurations.selectedSerialPort; //COMMENTED OUT FOR SERIAL ROBOT
 
-			//timed commands
-			if (BasicDataConfigurations.threatTime != 0)
+            //timed commands
+            if (BasicDataConfigurations.threatTime != 0)
 				timedCommands.timeForThreat = BasicDataConfigurations.threatTime;
 			else
 				timedCommands.timeForThreat = manualThreatDuration;
