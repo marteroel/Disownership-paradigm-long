@@ -336,11 +336,13 @@
     <Compile Include="Assets\Packages\VRStandardAssets\Scripts\VRInput.cs" />
     <Compile Include="Assets\Packages\VRStandardAssets\Scripts\VRInteractiveItem.cs" />
     <Compile Include="Assets\Packages\VRStandardAssets\Scripts\VRTrackingReset.cs" />
+    <Compile Include="Assets\Scripts\ChangePortName.cs" />
     <Compile Include="Assets\Scripts\ConditionalStimulationSceneSelector.cs" />
     <Compile Include="Assets\Scripts\ConditionInstructions.cs" />
     <Compile Include="Assets\Scripts\ConditionManager.cs" />
     <Compile Include="Assets\Scripts\ConditionSetter.cs" />
     <Compile Include="Assets\Scripts\DefaultCalibration.cs" />
+    <Compile Include="Assets\Scripts\DontDestroyObject.cs" />
     <Compile Include="Assets\Scripts\EmbeddedQuestionManager.cs" />
     <Compile Include="Assets\Scripts\IPConnectionManager.cs" />
     <Compile Include="Assets\Scripts\OscMessageManager.cs" />

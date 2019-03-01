@@ -5,29 +5,39 @@ using UnityEngine;
 namespace StrokingRobot{
 	public class MovementSeries : MonoBehaviour {
 
-		public RobotManagerArvity robotManager;
+		private RobotManagerArvity robotManager;
 		public List<int> stepsPerSpeed;
 		public List<int> speedPerStep;
 
 		private int currentStep, currentStepRepetition;
 
+        private void Awake()
+        {
+            robotManager = (RobotManagerArvity)FindObjectOfType<RobotManagerArvity>();
+        }
+        private void Start() //added
+        {
+            StartCoroutine(StartMovementTrajectory());
+            currentStep = 0;
+            currentStepRepetition = 0;
+        }
 
-		void Update() {
-			if (Input.GetKeyDown("m")) {
-				StartCoroutine(StartMovementTrajectory());
-				currentStep = 0;
-				currentStepRepetition = 0;
-			}
-		}
+        void Update() {
+            /*	if (Input.GetKeyDown("m")) {
+                    StartCoroutine(StartMovementTrajectory());
+                    currentStep = 0;
+                    currentStepRepetition = 0;
+                } */ //commented out for study.
+        }
 
 
-		private IEnumerator StartMovementTrajectory(){
+        private IEnumerator StartMovementTrajectory(){
 
 
 			//robotManager.CallDuration ();
 
 			while (!robotManager.IsReadyToStartMovement()) {
-				Debug.Log ("is waiting for robot to come back");
+				//Debug.Log ("is waiting for robot to come back"); //commented out
 				yield return null;
 			}
 

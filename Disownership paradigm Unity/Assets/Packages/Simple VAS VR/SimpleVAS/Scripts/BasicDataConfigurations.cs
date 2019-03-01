@@ -67,7 +67,7 @@ namespace SimpleVAS {
 
 			//added
 			selectedWebcamDevice = webcamDevice.value;
-			selectedSerialPort = serialDropdown.GetComponentInChildren<Text> ().text;
+            selectedSerialPort = ChangePortName.instance.ardityFormattedPort();//serialDropdown.GetComponentInChildren<Text> ().text; //edited for robot experiment
 
 			if (soundToggle.isOn)	useSound = true;
 			else	useSound = false;

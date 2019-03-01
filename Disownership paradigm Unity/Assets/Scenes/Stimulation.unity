@@ -113,6 +113,145 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &57993206
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: speedPerStep.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474278198491282, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[3]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[4]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[5]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[6]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[7]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[8]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[9]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[0]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114696618326464426, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: portName
+      value: \\.\COM15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: stepsPerSpeed.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: speedPerStep.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: speedPerStep.Array.data[0]
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114273078611310914, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: tempPort
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &57993207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1498909487700628, guid: 2fbd624b46a8afd4fab3946118f00e85,
+    type: 2}
+  m_PrefabInternal: {fileID: 57993206}
+--- !u!114 &57993208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57993207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90fb37798d804f547b9e5524e51c6759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &245921528
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,6 +1115,7 @@ GameObject:
   - component: {fileID: 1835912988}
   - component: {fileID: 1835912989}
   - component: {fileID: 1835912990}
+  - component: {fileID: 1835912991}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -1059,3 +1199,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Transmitter: {fileID: 616600231}
   address: /sound/1
+--- !u!114 &1835912991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1835912985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd3e42b515b51a4cb4bfe2a5c403aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepsPerSpeed: 100000000f0000000e000000
+  speedPerStep: 010000000100000001000000
