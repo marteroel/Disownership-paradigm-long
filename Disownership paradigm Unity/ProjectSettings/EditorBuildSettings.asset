@@ -29,7 +29,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Goodbye.unity
     guid: e0820f20fcaed784f89691dd432da3d3
-  - enabled: 1
-    path: Assets/Scenes/TCP-test.unity
-    guid: 5dee382bcf765774081496c28edf3b48
   m_configObjects: {}
