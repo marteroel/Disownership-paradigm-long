@@ -1135,6 +1135,7 @@ MonoBehaviour:
   scrollValue: {fileID: 1825505998}
   handle: {fileID: 1656814130}
   csvWriter: {fileID: 1493182002}
+  stimulationConditionName: 
   isForcedChoice: 0
   toggleGroup: {fileID: 0}
 --- !u!1 &1424905803
@@ -1287,7 +1288,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Strongly agree
+  m_Text: "Stimme vollst\xE4ndig zu"
 --- !u!222 &1474853006
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1871,7 +1872,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Strongly disagree
+  m_Text: "Stimme \xFCberhaupt nicht zu"
 --- !u!222 &1810147265
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2206,7 +2207,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Accept
+  m_Text: Weiter
 --- !u!222 &1866524148
 CanvasRenderer:
   m_ObjectHideFlags: 0
