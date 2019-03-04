@@ -1279,8 +1279,8 @@ GameObject:
   - component: {fileID: 1835912989}
   - component: {fileID: 1835912990}
   - component: {fileID: 1835912991}
-  - component: {fileID: 1835912993}
   - component: {fileID: 1835912992}
+  - component: {fileID: 1835912993}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -1398,7 +1398,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1835912985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba0683c5de9c6314083b5651a0484d1b, type: 3}
+  m_Script: {fileID: 11500000, guid: 048735a2eaa787e4186cf60fd827d360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   connectionStatus: {fileID: 861683468}

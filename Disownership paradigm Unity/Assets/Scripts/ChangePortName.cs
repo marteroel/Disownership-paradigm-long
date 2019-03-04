@@ -29,17 +29,24 @@ public class ChangePortName : MonoBehaviour {
 
     public string ardityFormattedPort()
     {
-        string serialPort = serialDropdown.GetComponentInChildren<Text>().text;
-        serialPort = serialPort.Remove(0, 3);
-
-        int portNumber = int.Parse(serialPort);
-
         string ardityPortFormatted;
 
-        if (portNumber < 10)
-            ardityPortFormatted = "COM" + portNumber;
-        else
-            ardityPortFormatted = "\\\\.\\" + "COM" + portNumber;
+        string serialPort = serialDropdown.GetComponentInChildren<Text>().text;
+
+        if (serialPort != "")
+        {    
+            serialPort = serialPort.Remove(0, 3);
+
+            int portNumber = int.Parse(serialPort);
+
+            if (portNumber < 10)
+                ardityPortFormatted = "COM" + portNumber;
+            else
+                ardityPortFormatted = "\\\\.\\" + "COM" + portNumber;
+
+
+        }
+        else ardityPortFormatted = "";
 
         return ardityPortFormatted;
     }

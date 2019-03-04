@@ -11,7 +11,7 @@ public class IPConnectionTest : MonoBehaviour {
 
     // Use this for initialization
     void Awake () {
-        tcpClient = GetComponent<TCPClient>();
+        tcpClient = FindObjectOfType<TCPClient>();
 	}
 
     private void Start()
@@ -41,6 +41,7 @@ public class IPConnectionTest : MonoBehaviour {
         if (tcpClient.isConnected)
         {
             connectionButton.GetComponent<Image>().color = Color.green;
+            tcpClient.SendTCPMessage("test connection message");
         }
 
         else
