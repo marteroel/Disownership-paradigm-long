@@ -327,7 +327,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Entfernen Sie bitte den Headset
+  m_Text: Entfernen Sie bitte den Headset.
 --- !u!222 &816850606
 CanvasRenderer:
   m_ObjectHideFlags: 0

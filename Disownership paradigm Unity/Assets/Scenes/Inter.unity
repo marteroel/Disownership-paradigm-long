@@ -1049,7 +1049,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 800, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1338755281
@@ -1084,8 +1084,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Du wirst nun f\xFCr ca. eine halbe Minute eine Hand sehen, die ber\xFChrt
-    wird w\xE4hrend wir gleichzeitig deine Hand ber\xFChren. Bitte konzentriere dich
+  m_Text: "Du wirst nun f\xFCr ca. zweieinhalb Minuten eine Hand sehen, die ber\xFChrt
+    wird, w\xE4hrend wir gleichzeitig deine Hand ber\xFChren. Bitte konzentriere dich
     darauf, wie es sich anf\xFChlt. Wir werden dir nachher einige Fragen dazu stellen."
 --- !u!222 &1338755282
 CanvasRenderer:
@@ -1344,7 +1344,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1377123614}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
   m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
@@ -1354,10 +1354,10 @@ RectTransform:
   - {fileID: 319341660}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 900, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1425239830
@@ -1688,6 +1688,7 @@ GameObject:
   - component: {fileID: 1627059988}
   - component: {fileID: 1627059990}
   - component: {fileID: 1627059991}
+  - component: {fileID: 1627059992}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -1701,7 +1702,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1627059987}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4409de50b2ec1c140b5a0846a0ac3c05, type: 3}
   m_Name: 
@@ -1731,7 +1732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Stimulation wVAS
-  changeOnKey: 1
+  changeOnKey: 0
 --- !u!114 &1627059991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1746,6 +1747,19 @@ MonoBehaviour:
   sceneLoader: {fileID: 1627059990}
   sceneWithoutEmbeddedVAS: Stimulation
   sceneWithEmbeddedVAS: Stimulation wVAS
+--- !u!114 &1627059992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627059987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01631d19376d1934c9fab1df7f4dfa26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneLoader: {fileID: 1627059990}
+  time: 15
 --- !u!1 &1709006868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,7 +1888,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 800, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1791645385
@@ -1909,8 +1923,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Du wirst nun f\xFCr ca. eine halbe Minute eine Hand sehen, die ber\xFChrt
-    wird w\xE4hrend wir gleichzeitig deine Hand ber\xFChren. Bitte konzentriere dich
+  m_Text: "Du wirst nun f\xFCr ca. zweieinhalb Minuten eine Hand sehen, die ber\xFChrt
+    wird, w\xE4hrend wir gleichzeitig deine Hand ber\xFChren. Bitte konzentriere dich
     darauf, wie es sich anf\xFChlt. Wir werden dir nachher einige Fragen dazu stellen."
 --- !u!222 &1791645386
 CanvasRenderer:
