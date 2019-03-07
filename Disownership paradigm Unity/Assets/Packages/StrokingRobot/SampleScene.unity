@@ -567,10 +567,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serialManager: {fileID: 802638610}
+  sendMessagesToServer: 0
   distance: 100
-  speed: 2
-  angle: 25
+  speed: 16
+  forwardAngle: 24
+  returnAngle: 43
   totalTime: 0
+  readyToReceiveCommands: 0
+  acknowledgedInstruction: 0
 --- !u!114 &802638610
 MonoBehaviour:
   m_ObjectHideFlags: 0

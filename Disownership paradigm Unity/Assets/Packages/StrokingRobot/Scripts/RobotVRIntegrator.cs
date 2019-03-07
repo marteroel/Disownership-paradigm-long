@@ -12,7 +12,7 @@ namespace StrokingRobot {
 		// Update is called once per frame
 		void Update () {
 			
-			if (Input.GetKeyDown ("space")) 	robotManager.SendMovementSegment (robotManager.distance, robotManager.speed, robotManager.angle); 
+			if (Input.GetKeyDown ("space")) 	robotManager.SendMovementSegment (robotManager.distance, robotManager.speed, robotManager.forwardAngle, robotManager.returnAngle); 
 
 			if (Input.GetKeyDown ("s")) {
 				StartCoroutine (StartMovementTrajectory ());

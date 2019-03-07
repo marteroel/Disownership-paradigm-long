@@ -39,13 +39,15 @@ namespace StrokingRobot{
         {
             while (!robotManager.IsReadyToStartMovement()) {
                 yield return null;
+                //Debug.Log("waiting for him to arrive");
             }
+
 
             StartCoroutine(StartMovementTrajectory());
             currentStep = 0;
             currentStepRepetition = 0;
 
-            TimedCommands.instance.StartLoadSceneCoroutine();
+            TimedCommands.instance.StartLoadSceneCoroutine();//Uncomment for experiment
 
             if(sendMessagesToServer)
                 tcpCommunicator.SendTCPMessage("start block " + QuestionManager.currentCondition.ToString() + " delay " + ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition].ToString());
@@ -53,7 +55,6 @@ namespace StrokingRobot{
 
 
         private IEnumerator StartMovementTrajectory(){
-
 
 			//robotManager.CallDuration ();
 
@@ -68,16 +69,16 @@ namespace StrokingRobot{
 			while (!robotManager.acknowledgedInstruction){
 				yield return null;
 			}
-
-			robotManager.SendMovementSegment (100, speedPerStep [currentStep], 25);//whole lenght
+            Debug.Log("SEND MOVEMENT SEGMENT from coroutine");
+			robotManager.SendMovementSegment (100, speedPerStep [currentStep], robotManager.forwardAngle, robotManager.returnAngle);//whole lenght
 
 
            // Debug.Log ("told robot something new movement");
-
-			while (!robotManager.acknowledgedInstruction){
+            while (!robotManager.acknowledgedInstruction){
 				yield return null;
 			}
-			
+
+            Debug.Log("START MOVEMENT from coroutine and is ready is " + robotManager.IsReadyToStartMovement());
 			robotManager.StartMovement ();
 
             if (sendMessagesToServer)
