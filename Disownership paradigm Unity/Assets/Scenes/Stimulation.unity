@@ -252,6 +252,11 @@ Prefab:
       propertyPath: returnAngle
       value: 35
       objectReference: {fileID: 0}
+    - target: {fileID: 114696618326464426, guid: 2fbd624b46a8afd4fab3946118f00e85,
+        type: 2}
+      propertyPath: maxUnreadMessages
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114196014757255396, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 2fbd624b46a8afd4fab3946118f00e85, type: 2}

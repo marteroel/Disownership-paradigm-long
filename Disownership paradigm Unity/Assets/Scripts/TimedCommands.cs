@@ -73,7 +73,7 @@ public class TimedCommands : MonoBehaviour {
     }
 
 	private IEnumerator LoadSceneAt(){//changed to public to trigger from robot scripts
-		yield return new WaitForFixedTime (sceneDuration);
+        yield return new WaitForFixedTime (sceneDuration);
         tcpCommunicator.SendTCPMessage("end block " + QuestionManager.currentCondition.ToString());
         SceneManager.LoadScene (sceneToLoad);
         fadePanel.SetActive(true);

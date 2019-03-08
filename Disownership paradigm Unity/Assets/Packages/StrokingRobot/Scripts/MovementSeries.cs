@@ -24,6 +24,11 @@ namespace StrokingRobot{
         private void Start() //added
         {
             StartCoroutine(WaitForRobotToBeReady());
+            if (sendMessagesToServer) { 
+                tcpCommunicator.SendTCPMessage
+                    ("start block " + QuestionManager.currentCondition.ToString() + " delay " + 
+                    ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition].ToString());
+            }
         }
 
         void Update() {
@@ -49,8 +54,7 @@ namespace StrokingRobot{
 
             TimedCommands.instance.StartLoadSceneCoroutine();//Uncomment for experiment
 
-            if(sendMessagesToServer)
-                tcpCommunicator.SendTCPMessage("start block " + QuestionManager.currentCondition.ToString() + " delay " + ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition].ToString());
+            
         }
 
 
@@ -69,7 +73,7 @@ namespace StrokingRobot{
 			while (!robotManager.acknowledgedInstruction){
 				yield return null;
 			}
-            Debug.Log("SEND MOVEMENT SEGMENT from coroutine");
+
 			robotManager.SendMovementSegment (100, speedPerStep [currentStep], robotManager.forwardAngle, robotManager.returnAngle);//whole lenght
 
 
@@ -78,7 +82,6 @@ namespace StrokingRobot{
 				yield return null;
 			}
 
-            Debug.Log("START MOVEMENT from coroutine and is ready is " + robotManager.IsReadyToStartMovement());
 			robotManager.StartMovement ();
 
             if (sendMessagesToServer)

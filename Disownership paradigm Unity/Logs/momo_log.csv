@@ -1,1 +1,4 @@
 subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
+Momo,11,Female,Rigth handed,0,VAS,0,0,0.4637001
+Momo,11,Female,Rigth handed,1,VAS,0,0,0.4694787
+Momo,11,Female,Rigth handed,2,VAS,0,0,0.4709317
