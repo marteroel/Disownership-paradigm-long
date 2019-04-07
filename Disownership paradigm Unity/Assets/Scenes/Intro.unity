@@ -689,7 +689,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 1
 --- !u!222 &60584240
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2803,7 +2803,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 1
 --- !u!222 &277609548
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12435,12 +12435,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayPerCondition:
-  - {fileID: 282558649}
-  - {fileID: 1442429365}
-  - {fileID: 1137547112}
-  - {fileID: 1886620131}
-  - {fileID: 2000871245}
-  - {fileID: 1718645300}
+  - {fileID: 1451795897}
+  - {fileID: 1961736391}
+  - {fileID: 355462688}
+  - {fileID: 1887844622}
+  - {fileID: 825998413}
+  - {fileID: 510244486}
   orderToggle: {fileID: 1843553039}
 --- !u!1 &1525243272
 GameObject:
@@ -15074,7 +15074,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 1
 --- !u!222 &1769663549
 CanvasRenderer:
   m_ObjectHideFlags: 0

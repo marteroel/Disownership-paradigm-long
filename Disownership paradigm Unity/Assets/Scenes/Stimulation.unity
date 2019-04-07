@@ -1009,7 +1009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeForThreat: 6
   sceneDuration: 10
-  sceneToLoad: VAS
+  sceneToLoad: ForcedChoice
   stimulationCue: {fileID: 285611223}
   stimulationCueColor: {r: 1, g: 0, b: 0, a: 1}
   fadePanel: {fileID: 1263308640}

@@ -74,10 +74,10 @@ namespace SimpleVAS
 
 
 				//Comments for threat study.
-			//	if (isForcedChoice) 
-			//			SceneManager.LoadScene ("VAS");
+				if (isForcedChoice) 
+						SceneManager.LoadScene ("VAS");
 
-			//	else {
+				else {
 					currentCondition = currentCondition + 1;
 
 					//if (currentCondition < ConditionDictionary.selectedOrder.Length)//changed from package to:
@@ -86,7 +86,7 @@ namespace SimpleVAS
 					//else if (currentCondition == ConditionDictionary.selectedOrder.Length)//changed from package to:
 					else if (currentCondition == ConditionSetter.selectedConditionOrder.Count)
 						SceneManager.LoadScene ("Goodbye");
-			//	}
+				}
 			}
 		}
 	}

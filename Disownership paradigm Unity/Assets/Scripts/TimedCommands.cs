@@ -53,10 +53,19 @@ public class TimedCommands : MonoBehaviour {
 				threatMessage = "4";
 		}
 
+    }
 
-	}
 
-	private IEnumerator TriggerStimulationAt(){
+    void Update()
+    {
+        if (!BasicDataConfigurations.finishOnduration) { 
+            if (Input.GetKeyDown("space")) 
+                SceneManager.LoadScene(sceneToLoad);
+        }
+
+    }
+
+    private IEnumerator TriggerStimulationAt(){
 		
 		yield return new WaitForFixedTime (timeForThreat);
 
