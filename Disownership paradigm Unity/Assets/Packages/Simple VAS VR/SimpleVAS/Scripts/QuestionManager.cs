@@ -37,13 +37,14 @@ namespace SimpleVAS
 			questionList = CsvRead.questionnaireInput;
 			questionUI.text = questionList[currentItem];
 			nextButton.interactable = false;
-			handle.gameObject.SetActive (false);//added
+            if(!isForcedChoice)
+			    handle.gameObject.SetActive (false);//added
 
 		}
 			
 		public void OnSelection(){
-
-			handle.gameObject.SetActive (true);//added
+            if (!isForcedChoice)
+                handle.gameObject.SetActive (true);//added
 			nextButton.interactable = true;
 
 		}
@@ -62,7 +63,9 @@ namespace SimpleVAS
 			csvWriter.onNextButtonPressed ();
 
 			currentItem ++;
-			handle.gameObject.SetActive (false);//added
+
+            if (!isForcedChoice)
+                handle.gameObject.SetActive (false);//added
 
 			if (currentItem < questionList.Count) 
 				questionUI.text = questionList [currentItem];

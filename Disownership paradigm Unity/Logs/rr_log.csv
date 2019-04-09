@@ -1,0 +1,3 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
+rr,g,Female,Rigth handed,0,ForcedChoice,self,1,1
+rr,g,Female,Rigth handed,0,VAS,self,1,0.545939

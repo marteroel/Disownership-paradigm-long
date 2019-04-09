@@ -7,6 +7,7 @@ public class ConditionSetter : MonoBehaviour {
 
 	public Text[] eachCondition;
 	public InputField[] delayPerCondition;
+    public float defaultDelayTime;
 
 	public static List<string> selectedConditionOrder = new List<string>();
 	public static List<float> selectedDelayOrder = new List<float>();
@@ -21,8 +22,8 @@ public class ConditionSetter : MonoBehaviour {
 
 			if (delayPerCondition[i].text != "")
 				selectedDelayOrder.Add (float.Parse (delayPerCondition [i].text));
-			else
-				selectedDelayOrder.Add (0f);
+			else //if (delayPerCondition[i].placeholder != "")
+				selectedDelayOrder.Add (defaultDelayTime);//if empty adds delay of 1 by default
 		}
 			
 	}

@@ -473,7 +473,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Yes
+  m_Text: Self
 --- !u!222 &166545877
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1416,7 +1416,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: No
+  m_Text: Other
 --- !u!222 &1275810064
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1795,7 +1795,9 @@ MonoBehaviour:
   questionUI: {fileID: 2124150100}
   nextButton: {fileID: 2009352318}
   scrollValue: {fileID: 1825505998}
+  handle: {fileID: 0}
   csvWriter: {fileID: 1493182002}
+  stimulationConditionName: 
   isForcedChoice: 1
   toggleGroup: {fileID: 758243680}
 --- !u!1 &1413072301
