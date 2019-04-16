@@ -16,6 +16,7 @@ public class SerialControl : MonoBehaviour {
 			serialDevice = new SerialPort (portName, baudRate); //initializes a serial port
 			if(serialDevice != null) serialDevice.Close (); //makes sure the device is closed before openning
 			serialDevice.Open (); //opens serial device
+		Debug.Log(serialDevice);
 	}
 
 	public void WriteToPort(string message){

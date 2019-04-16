@@ -49,8 +49,26 @@ namespace SimpleVAS {
 			//added
 			selectedWebcamDevice = webcamDevice.value;
 
+
 			PlayerPrefs.SetInt ("serial port", serialDropdown.value);
 			selectedSerialPort = serialDropdown.GetComponentInChildren<Text> ().text;
+
+
+			if (selectedSerialPort != "")
+			{    
+				selectedSerialPort = selectedSerialPort.Remove(0, 3);
+
+				int portNumber = int.Parse(selectedSerialPort);
+
+				if (portNumber < 10)
+					selectedSerialPort = "COM" + portNumber;
+				else
+					selectedSerialPort = "\\\\.\\" + "COM" + portNumber;
+
+
+			}
+			
+			Debug.Log (selectedSerialPort);
 		}
 
 		//added 
