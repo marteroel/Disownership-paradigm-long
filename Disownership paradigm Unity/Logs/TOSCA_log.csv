@@ -1,0 +1,13 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
+TOSCA,cc,Female,Rigth handed,0,ForcedChoice,self,1,0
+TOSCA,cc,Female,Rigth handed,0,VAS,self,1,0.6285683
+TOSCA,cc,Female,Rigth handed,0,ForcedChoice,other,1,1
+TOSCA,cc,Female,Rigth handed,0,VAS,other,1,0.4973108
+TOSCA,cc,Female,Rigth handed,0,ForcedChoice,self,1,1
+TOSCA,cc,Female,Rigth handed,0,VAS,self,1,0.5844085
+TOSCA,cc,Female,Rigth handed,0,ForcedChoice,other,1,0
+TOSCA,cc,Female,Rigth handed,0,VAS,other,1,0.8870132
+TOSCA,cc,Female,Rigth handed,0,ForcedChoice,other,1,1
+TOSCA,cc,Female,Rigth handed,0,VAS,other,1,0.6356193
+TOSCA,cc,Female,Rigth handed,0,ForcedChoice,other,1,0
+TOSCA,cc,Female,Rigth handed,0,VAS,other,1,0.443546

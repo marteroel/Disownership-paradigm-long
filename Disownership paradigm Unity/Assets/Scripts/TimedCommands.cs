@@ -39,20 +39,21 @@ public class TimedCommands : MonoBehaviour {
 		else	stimulationCue.SetActive (false);
 
 		//sends serial messages for marking physiological recording.
-		if (ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition] == "self") {
-			if (ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition] == 0)
-				threatMessage = "1";
-			else
-				threatMessage = "2";
-		} 
+        if(ConditionSetter.selectedConditionOrder.Count < QuestionManager.currentCondition) { 
+		    if (ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition] == "self") {
+			    if (ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition] == 0)
+				    threatMessage = "1";
+			    else
+				    threatMessage = "2";
+		    } 
 
-		else if (ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition] == "other") {
-			if (ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition] == 0)
-				threatMessage = "3";
-			else
-				threatMessage = "4";
-		}
-
+		    else if (ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition] == "other") {
+			    if (ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition] == 0)
+				    threatMessage = "3";
+			    else
+				    threatMessage = "4";
+		    }
+    }
     }
 
 

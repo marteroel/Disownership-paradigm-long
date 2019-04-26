@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SimpleVAS;
+using UnityEngine.SceneManagement;
 
 public class ConditionManager : MonoBehaviour {
 
@@ -29,8 +30,12 @@ public class ConditionManager : MonoBehaviour {
 		}
 
 		else {
-			webcamDisplay.delayTimeSeconds = ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition];	
-			serialController.portName = BasicDataConfigurations.selectedSerialPort;
+            if(SceneManager.GetActiveScene().name == "Stimulation End")
+                webcamDisplay.delayTimeSeconds = 1;
+            else
+                webcamDisplay.delayTimeSeconds = ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition];	   
+
+            serialController.portName = BasicDataConfigurations.selectedSerialPort;
 
 			//timed commands
 			if (BasicDataConfigurations.threatTime != 0)
@@ -46,7 +51,8 @@ public class ConditionManager : MonoBehaviour {
 	}
 
 	void Start() {
-		
+
+        Debug.Log("condition is " + ConditionSetter.selectedDelayOrder.Count + " trial " + QuestionManager.currentCondition + " both ");
 		if (useManualSettings) 
 			webcamDisplay.SetWebCam (manualWebcamIndex);
 

@@ -1,0 +1,13 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
+FINAL_TEST04,55,Female,Rigth handed,0,ForcedChoice,self,1,1
+FINAL_TEST04,55,Female,Rigth handed,0,VAS,self,1,0.9064825
+FINAL_TEST04,55,Female,Rigth handed,0,ForcedChoice,other,1,1
+FINAL_TEST04,55,Female,Rigth handed,0,VAS,other,1,0.7504412
+FINAL_TEST04,55,Female,Rigth handed,0,ForcedChoice,self,1,1
+FINAL_TEST04,55,Female,Rigth handed,0,VAS,self,1,0.7719011
+FINAL_TEST04,55,Female,Rigth handed,0,ForcedChoice,other,1,0
+FINAL_TEST04,55,Female,Rigth handed,0,VAS,other,1,0.4527764
+FINAL_TEST04,55,Female,Rigth handed,0,ForcedChoice,other,1,1
+FINAL_TEST04,55,Female,Rigth handed,0,VAS,other,1,0.5281399
+FINAL_TEST04,55,Female,Rigth handed,0,ForcedChoice,other,1,0
+FINAL_TEST04,55,Female,Rigth handed,0,VAS,other,1,0.4721532

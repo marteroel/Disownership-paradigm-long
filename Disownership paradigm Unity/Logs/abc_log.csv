@@ -1,0 +1,13 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
+abc,def,Female,Rigth handed,0,ForcedChoice,self,1,1
+abc,def,Female,Rigth handed,0,VAS,self,1,0.8329231
+abc,def,Female,Rigth handed,0,ForcedChoice,other,1,1
+abc,def,Female,Rigth handed,0,VAS,other,1,0.7395999
+abc,def,Female,Rigth handed,0,ForcedChoice,self,1,0
+abc,def,Female,Rigth handed,0,VAS,self,1,0.4045602
+abc,def,Female,Rigth handed,0,ForcedChoice,other,1,0
+abc,def,Female,Rigth handed,0,VAS,other,1,0.441712
+abc,def,Female,Rigth handed,0,ForcedChoice,other,1,1
+abc,def,Female,Rigth handed,0,VAS,other,1,0.6232541
+abc,def,Female,Rigth handed,0,ForcedChoice,other,1,1
+abc,def,Female,Rigth handed,0,VAS,other,1,0.7643657
