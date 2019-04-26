@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/VAS.unity
     guid: 8b3bb1a1d1dac8e4eb0bcefb58739bba
   - enabled: 1
+    path: Assets/Scenes/Stimulation End.unity
+    guid: e8aed09e4032dba46bfcbb60f892429b
+  - enabled: 1
     path: Assets/Scenes/Goodbye.unity
     guid: e0820f20fcaed784f89691dd432da3d3
   m_configObjects: {}

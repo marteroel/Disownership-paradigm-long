@@ -540,10 +540,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Strongly disagree
+  m_Text: Ich habe nicht verstanden
 --- !u!222 &245344466
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -895,7 +895,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Next
+  m_Text: Weiter
 --- !u!222 &345680571
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1681,7 +1681,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Strongly agree
+  m_Text: "Ich habe verstanden\r"
 --- !u!222 &1220914085
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2098,13 +2098,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '... ...
-
-    If you have understood the instructions, please select ''strongly agree'' on the
-    scale and then select ''Next''
-
-
-    (experimenter should press ''c'' to center the image)'
+  m_Text: "Wir beginnen gleich mit dem Experiment. Wenn Sie bereit sind zu beginnen
+    dann w\xE4hlen Sie \"Ich habe verstanden\" und auf \"Weiter\""
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
