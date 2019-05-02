@@ -1480,7 +1480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275bf87eed212447590b8c34f5351655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: StimulationTest
+  sceneToLoad: Inter
   changeOnKey: 1
 --- !u!114 &1005339069
 MonoBehaviour:
@@ -2098,8 +2098,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Wir beginnen gleich mit dem Experiment. Wenn Sie bereit sind zu beginnen
-    dann w\xE4hlen Sie \"Ich habe verstanden\" und auf \"Weiter\""
+  m_Text: "Wir beginnen gleich mit dem Experiment. Wenn Du bereit bist zu beginnen,
+    dann w\xE4hle \"Ich habe verstanden\" und \"Weiter\""
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0

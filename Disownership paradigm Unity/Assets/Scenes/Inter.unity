@@ -1084,7 +1084,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Please start by touching your own left hand with the paintbrush.
+  m_Text: "Bitte beginne Deine linke Hand mit dem Pinsel in der Geschwindigkeit, mit
+    der Du vorhin ge\xFCbt hast, zu ber\xFChren."
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1907,7 +1908,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The experimenter will start by touching your left hand with the paintbrush.
+  m_Text: "Die Pr\xFCfperson startet mit der Ber\xFChrung Deiner linken Hand mit dem
+    Pinsel."
 --- !u!222 &1791645386
 CanvasRenderer:
   m_ObjectHideFlags: 0
