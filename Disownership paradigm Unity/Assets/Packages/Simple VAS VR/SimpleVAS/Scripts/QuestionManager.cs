@@ -88,7 +88,7 @@ namespace SimpleVAS
 						SceneManager.LoadScene ("Inter");
 					//else if (currentCondition == ConditionDictionary.selectedOrder.Length)//changed from package to:
 					else if (currentCondition == ConditionSetter.selectedConditionOrder.Count)
-						SceneManager.LoadScene ("Stimulation End");
+						SceneManager.LoadScene ("Before End");
 				}
 			}
 		}
