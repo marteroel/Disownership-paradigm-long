@@ -59,12 +59,11 @@ public class TimedCommands : MonoBehaviour {
 
     void Update()
     {
+        /*
         if (!BasicDataConfigurations.finishOnduration) {
-            if (CutStimulation.readyToFinish) { 
                 if (Input.GetKeyDown("space")) 
                  SceneManager.LoadScene(sceneToLoad);
-            }
-        }
+        }*/
 
     }
 

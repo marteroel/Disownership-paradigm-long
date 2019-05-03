@@ -1033,7 +1033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1338755280
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1259,7 +1259,6 @@ GameObject:
   - component: {fileID: 1377123618}
   - component: {fileID: 1377123617}
   - component: {fileID: 1377123616}
-  - component: {fileID: 1377123615}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1267,19 +1266,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1377123615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1377123614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81c478ebd782d5342a584df7956f892e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instructionsSelf: {fileID: 1338755279}
-  instructionsOther: {fileID: 1791645383}
 --- !u!114 &1377123616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,8 +1329,8 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1377123614}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 100}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
+  m_LocalPosition: {x: 0, y: 0, z: 85}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 1149604141}
@@ -1353,10 +1339,10 @@ RectTransform:
   - {fileID: 319341660}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -60}
   m_SizeDelta: {x: 900, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1425239830
@@ -1729,7 +1715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275bf87eed212447590b8c34f5351655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Before End
+  sceneToLoad: Stimulation End
   changeOnKey: 1
 --- !u!114 &1627059991
 MonoBehaviour:

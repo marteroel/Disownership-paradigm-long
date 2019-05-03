@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CutStimulation : MonoBehaviour {
 
@@ -25,14 +26,15 @@ public class CutStimulation : MonoBehaviour {
 
     private void InterruptStimulation()
     {
-        if(count < 2) { 
+        count++;
+
+        if (count <= 2) { 
             isActive = !isActive;
             panel.SetActive(isActive);
-            count++;
         }
 
         else
-            readyToFinish = true;
+            SceneManager.LoadScene("ForcedChoice");
 
     }
 }

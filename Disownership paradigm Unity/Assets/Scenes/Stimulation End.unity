@@ -976,6 +976,7 @@ GameObject:
   - component: {fileID: 1835912988}
   - component: {fileID: 1835912989}
   - component: {fileID: 1835912990}
+  - component: {fileID: 1835912991}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -1059,3 +1060,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Transmitter: {fileID: 616600231}
   address: /sound/1
+--- !u!114 &1835912991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1835912985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275bf87eed212447590b8c34f5351655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Goodbye
+  changeOnKey: 1
