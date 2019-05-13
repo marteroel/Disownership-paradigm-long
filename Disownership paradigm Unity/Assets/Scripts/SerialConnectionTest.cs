@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO.Ports;
+using UnityEngine.UI;
 
 public class SerialConnectionTest : MonoBehaviour {
 
@@ -10,12 +11,28 @@ public class SerialConnectionTest : MonoBehaviour {
     public string testMessage;
     private int baudRate = 9600;//Fixed to 9600 for the trigger box.
 
+    public Dropdown serialDropdown;
+
     SerialPort serialDevice;
 
     private void Start()
     {
         if (testMessage == "")
             testMessage = "9";
+
+        portName = serialDropdown.GetComponentInChildren<Text>().text;
+
+        if (portName != "")
+        {
+            portName = portName.Remove(0, 3);
+
+            int portNumber = int.Parse(portName);
+
+            if (portNumber < 10)
+                portName = "COM" + portNumber;
+            else
+                portName = "\\\\.\\" + "COM" + portNumber;
+        }
     }
 
     public void OnButtonPressed()

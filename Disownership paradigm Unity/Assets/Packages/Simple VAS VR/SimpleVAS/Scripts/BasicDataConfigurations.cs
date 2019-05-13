@@ -69,7 +69,18 @@ namespace SimpleVAS {
 			selectedWebcamDevice = webcamDevice.value;
 			selectedSerialPort = serialDropdown.GetComponentInChildren<Text> ().text;
 
-			if (soundToggle.isOn)	useSound = true;
+            if (selectedSerialPort != "") {
+                selectedSerialPort = selectedSerialPort.Remove(0, 3);
+
+                int portNumber = int.Parse(selectedSerialPort);
+
+                if (portNumber < 10)
+                    selectedSerialPort = "COM" + portNumber;
+                else
+                    selectedSerialPort = "\\\\.\\" + "COM" + portNumber;
+            }
+
+            if (soundToggle.isOn)	useSound = true;
 			else	useSound = false;
 			if (threatCueToggle.isOn)	useThreatCue = true;
 			else	useThreatCue = false;
