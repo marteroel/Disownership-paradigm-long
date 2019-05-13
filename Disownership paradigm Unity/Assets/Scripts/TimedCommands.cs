@@ -13,6 +13,8 @@ public class TimedCommands : MonoBehaviour {
 	public Color stimulationCueColor;
     public GameObject fadePanel;
 
+    public bool sendOSCMessage;
+
 	private SerialControl serialController;
 	public OscMessageManager oscMessageManager;
 	private string threatMessage;
@@ -61,8 +63,11 @@ public class TimedCommands : MonoBehaviour {
 		yield return new WaitForFixedTime (timeForThreat);
 
 		serialController.WriteToPort(threatMessage);
-		oscMessageManager.OnSendMessage("1");//sends osc message if needed to trigger external application.
-		stimulationCue.GetComponent<Image>().color = stimulationCueColor;
+        stimulationCue.GetComponent<Image>().color = stimulationCueColor;
+
+        if (sendOSCMessage)
+            oscMessageManager.OnSendMessage("1");//sends osc message if needed to trigger external application.
+
 	}
 
 	private IEnumerator LoadSceneAt(){

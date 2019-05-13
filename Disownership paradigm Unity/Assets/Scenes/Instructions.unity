@@ -1481,7 +1481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: StimulationTest
-  changeOnKey: 0
+  changeOnKey: 1
 --- !u!114 &1005339069
 MonoBehaviour:
   m_ObjectHideFlags: 0
