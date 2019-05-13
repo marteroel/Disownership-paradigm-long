@@ -1279,8 +1279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81c478ebd782d5342a584df7956f892e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instructionsSelf: {fileID: 1338755279}
-  instructionsOther: {fileID: 1791645383}
+  instructionsA: {fileID: 1338755279}
+  instructionsB: {fileID: 1791645383}
 --- !u!114 &1377123616
 MonoBehaviour:
   m_ObjectHideFlags: 0
