@@ -1084,8 +1084,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "You will now move your left hand repeatedly to the sides as practiced before.
-    After each round, you will be asked to respond a questionnaire.\r\n"
+  m_Text: "Sie werden nun Ihre linke Hand mehrmals zur Seite bewegen, wie Sie dies
+    soeben ge\xFCbt haben. Nach jeder Runde werden Sie dazu aufgefordert, eine Frage
+    zu beantworten."
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1908,9 +1909,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The experimenter will now move your lef hand repeatedly to the sides, please
-    do not move your left hand in this process. After each round, you will be asked
-    to respond a questionnaire.
+  m_Text: "Der Versuchsleiter wird nun Ihre linke Hand mehrmals zur Seite bewegen.
+    Bitte bewegen Sie f\xFCr diese Aufgabe nicht selbst Ihre Hand. Nach jeder Runde
+    werden Sie dazu aufgefordert, eine Frage zu beantworten."
 --- !u!222 &1791645386
 CanvasRenderer:
   m_ObjectHideFlags: 0

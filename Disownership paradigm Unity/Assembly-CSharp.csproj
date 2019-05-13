@@ -327,6 +327,7 @@
     <Compile Include="Assets\Scripts\OscMessageManager.cs" />
     <Compile Include="Assets\Scripts\PlaySound.cs" />
     <Compile Include="Assets\Scripts\SceneLoaderForStimulation.cs" />
+    <Compile Include="Assets\Scripts\SerialConnectionTest.cs" />
     <Compile Include="Assets\Scripts\SetSerialDropdown.cs" />
     <Compile Include="Assets\Scripts\StimulationTestSettings.cs" />
     <Compile Include="Assets\Scripts\TCPClient.cs" />
