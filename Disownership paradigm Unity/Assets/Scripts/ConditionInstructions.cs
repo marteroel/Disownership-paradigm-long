@@ -5,14 +5,14 @@ using SimpleVAS;
 
 public class ConditionInstructions : MonoBehaviour {
 
-	public GameObject instructionsSelf, instructionsOther;
+	public GameObject instructionsA, instructionsB;
 
 	// Use this for initialization
 	void Start () {
-		if (ConditionSetter.selectedConditionOrder [QuestionManager.currentCondition] == "self")
-			instructionsSelf.SetActive(true);
+		if (ConditionSetter.selectedConditionOrder [QuestionManager.currentCondition] == "active")
+			instructionsA.SetActive(true);
 		else 
-			instructionsOther.SetActive(true);
+			instructionsB.SetActive(true);
 		
 	}
 }

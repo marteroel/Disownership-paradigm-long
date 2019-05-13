@@ -78,6 +78,7 @@ namespace SimpleVAS {
                     selectedSerialPort = "COM" + portNumber;
                 else
                     selectedSerialPort = "\\\\.\\" + "COM" + portNumber;
+                Debug.Log(selectedSerialPort);
             }
 
             if (soundToggle.isOn)	useSound = true;
