@@ -41,14 +41,14 @@ public class TimedCommands : MonoBehaviour {
 		else	stimulationCue.SetActive (false);
 
 		//sends serial messages for marking physiological recording.
-		if (ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition] == "self") {
+		if (ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition] == "active") {
 			if (ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition] == 0)
 				threatMessage = "1";
 			else
 				threatMessage = "2";
 		} 
 
-		else if (ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition] == "other") {
+		else if (ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition] == "passive") {
 			if (ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition] == 0)
 				threatMessage = "3";
 			else
@@ -58,8 +58,13 @@ public class TimedCommands : MonoBehaviour {
 
 	}
 
+	//private IEnumerator WaitBeforeShowingCameraFeed(){
+	//	yield return new WaitForFixedTime (1f);
+	//}
+
 	private IEnumerator TriggerStimulationAt(){
-		
+
+		Debug.Log ("should trigger this coroutine");
 		yield return new WaitForFixedTime (timeForThreat);
 
 		serialController.WriteToPort(threatMessage);
