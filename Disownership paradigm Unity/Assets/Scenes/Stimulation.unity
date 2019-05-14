@@ -414,7 +414,7 @@ AudioLowPassFilter:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.11363637
+      value: 0.18181819
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1013,6 +1013,7 @@ MonoBehaviour:
   stimulationCue: {fileID: 285611223}
   stimulationCueColor: {r: 1, g: 0, b: 0, a: 1}
   fadePanel: {fileID: 1263308640}
+  sendOSCMessage: 0
   oscMessageManager: {fileID: 1835912990}
 --- !u!114 &1835912988
 MonoBehaviour:

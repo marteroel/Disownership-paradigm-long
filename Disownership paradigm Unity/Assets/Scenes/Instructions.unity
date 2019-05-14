@@ -2098,7 +2098,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bevor wir mit dem Experiment beginnen, wirst du die M\xF6glichkeit haben
+  m_Text: "Bevor wir mit dem Experiment beginnen, werden Sie die M\xF6glichkeit haben
     zu \xFCben."
 --- !u!222 &1338755282
 CanvasRenderer:
