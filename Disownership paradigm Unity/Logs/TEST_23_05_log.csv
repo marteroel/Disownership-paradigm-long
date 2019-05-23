@@ -1,0 +1,5 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
+TEST_23_05,xx,Female,Rigth handed,0,ForcedChoice,self,1,0
+TEST_23_05,xx,Female,Rigth handed,0,VAS,self,1,0.1817166
+TEST_23_05,xx,Female,Rigth handed,0,ForcedChoice,other,1,0
+TEST_23_05,xx,Female,Rigth handed,0,VAS,other,1,0.4808917

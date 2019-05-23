@@ -1908,8 +1908,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Die Pr\xFCfperson startet mit der Ber\xFChrung Deiner linken Hand mit dem
-    Pinsel."
+  m_Text: "Die Versuchsleiter startet mit der Ber\xFChrung Deiner linken Hand mit
+    dem Pinsel."
 --- !u!222 &1791645386
 CanvasRenderer:
   m_ObjectHideFlags: 0
