@@ -42,14 +42,14 @@ public class TimedCommands : MonoBehaviour {
 
 		//sends serial messages for marking physiological recording.
 		if (ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition] == "active") {
-			if (ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition] == 0)
+			if (ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition] == 0f)
 				threatMessage = "1";
 			else
 				threatMessage = "2";
 		} 
 
 		else if (ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition] == "passive") {
-			if (ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition] == 0)
+			if (ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition] == 0f)
 				threatMessage = "3";
 			else
 				threatMessage = "4";
