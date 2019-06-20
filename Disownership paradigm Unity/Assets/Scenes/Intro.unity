@@ -1595,7 +1595,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: self sync
+  m_Text: self
 --- !u!222 &142442530
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3441,13 +3441,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: self sync
+    - m_Text: self
       m_Image: {fileID: 0}
-    - m_Text: self async
-      m_Image: {fileID: 0}
-    - m_Text: other sync
-      m_Image: {fileID: 0}
-    - m_Text: other async
+    - m_Text: other
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4323,7 +4319,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: self sync
+  m_Text: self
 --- !u!222 &450444784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10971,7 +10967,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: self sync
+  m_Text: self
 --- !u!222 &1394922148
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11254,7 +11250,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: self sync
+  m_Text: self
 --- !u!222 &1435499181
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11692,13 +11688,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: self sync
+    - m_Text: self
       m_Image: {fileID: 0}
-    - m_Text: self async
-      m_Image: {fileID: 0}
-    - m_Text: other sync
-      m_Image: {fileID: 0}
-    - m_Text: other async
+    - m_Text: other
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15690,13 +15682,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: self sync
+    - m_Text: self
       m_Image: {fileID: 0}
-    - m_Text: self async
-      m_Image: {fileID: 0}
-    - m_Text: other sync
-      m_Image: {fileID: 0}
-    - m_Text: other async
+    - m_Text: other
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16177,13 +16165,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: self sync
+    - m_Text: self
       m_Image: {fileID: 0}
-    - m_Text: self async
-      m_Image: {fileID: 0}
-    - m_Text: other sync
-      m_Image: {fileID: 0}
-    - m_Text: other async
+    - m_Text: other
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
