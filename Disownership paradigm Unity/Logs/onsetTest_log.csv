@@ -1,0 +1,9 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value,onset,offset
+onsetTest,xx,Female,Rigth handed,0,VAS,self,1,0.9245235,56.30647,70.80352
+onsetTest,xx,Female,Rigth handed,1,VAS,self,1,0.4770182,56.30647,70.80352
+onsetTest,xx,Female,Rigth handed,0,VAS,self,0,0.3011414,84.6787,98.98248
+onsetTest,xx,Female,Rigth handed,1,VAS,self,0,0.8483223,84.6787,98.98248
+onsetTest,xx,Female,Rigth handed,0,VAS,self,0,0.2859981,113.9349,128.2394
+onsetTest,xx,Female,Rigth handed,1,VAS,self,0,0.5198513,113.9349,128.2394
+onsetTest,xx,Female,Rigth handed,0,VAS,self,0,0.03783093,142.3291,156.6001
+onsetTest,xx,Female,Rigth handed,1,VAS,self,0,0.1194846,142.3291,156.6001

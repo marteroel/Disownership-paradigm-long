@@ -331,6 +331,8 @@
     <Compile Include="Assets\Scripts\StimulationTestSettings.cs" />
     <Compile Include="Assets\Scripts\TCPClient.cs" />
     <Compile Include="Assets\Scripts\TimedCommands.cs" />
+    <Compile Include="Assets\Scripts\TrialOnsetAndOffsetTime.cs" />
+    <Compile Include="Assets\Scripts\TurnToggleAutomatically.cs" />
     <Compile Include="Assets\Scripts\TwoConditionCounterbalancing.cs" />
     <Compile Include="Assets\Scripts\WebcamTest.cs" />
     <Compile Include="Assets\Scripts\WebcamUI.cs" />

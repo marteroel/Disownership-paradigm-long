@@ -31,7 +31,7 @@ namespace SimpleVAS
 
 
 		void Start () {
-			WriteToFile ("subject ID", "age", "gender", "handedness", "question ID", "questionnaire type", "condition", "delay time", "value");
+			WriteToFile ("subject ID", "age", "gender", "handedness", "question ID", "questionnaire type", "condition", "delay time", "value", "onset", "offset");
 		}
 			
 
@@ -41,7 +41,8 @@ namespace SimpleVAS
 			//Changed from package
 			//WriteToFile (BasicDataConfigurations.ID, BasicDataConfigurations.age, BasicDataConfigurations.gender, BasicDataConfigurations.handedness, QuestionManager.questionnaireItem,  SceneManager.GetActiveScene().name, ConditionDictionary.selectedOrder[QuestionManager.currentCondition], QuestionManager.VASvalue);
 			WriteToFile (BasicDataConfigurations.ID, BasicDataConfigurations.age, BasicDataConfigurations.gender, BasicDataConfigurations.handedness, QuestionManager.questionnaireItem,  
-				SceneManager.GetActiveScene().name, ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition], ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition].ToString(), QuestionManager.VASvalue);
+				SceneManager.GetActiveScene().name, ConditionSetter.selectedConditionOrder[QuestionManager.currentCondition], ConditionSetter.selectedDelayOrder[QuestionManager.currentCondition].ToString(), QuestionManager.VASvalue, 
+                TrialOnsetAndOffsetTime.onsetTime.ToString(), TrialOnsetAndOffsetTime.offsetTime.ToString());
 		}
 
 		void LoadNull(){
@@ -53,9 +54,9 @@ namespace SimpleVAS
 			ConditionDictionary.selectedOrder = new string[3] {na, na, na};
 		}
 		//added an extra row
-		void WriteToFile(string a, string b, string c, string d, string e, string f, string g, string h, string i){
+		void WriteToFile(string a, string b, string c, string d, string e, string f, string g, string h, string i, string j, string k){
 
-			string stringLine =  a + "," + b + "," + c + "," + d + "," + e + "," + f + "," + g + "," + h + "," + i;
+			string stringLine =  a + "," + b + "," + c + "," + d + "," + e + "," + f + "," + g + "," + h + "," + i + "," + j + "," + k;
 
 			System.IO.StreamWriter file = new System.IO.StreamWriter("./Logs/" + BasicDataConfigurations.ID + "_log.csv", true);
 			file.WriteLine(stringLine);
