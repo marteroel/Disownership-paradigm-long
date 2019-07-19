@@ -22,8 +22,8 @@ public class WebcamDisplay : MonoBehaviour {
 
 		//string deviceName = devices[webcamDeviceID].name;//changed from Unitypackage:
 		string deviceName = devices[webcamIndex].name;
-		webcamTexture = new WebCamTexture(deviceName);
-		webcamTexture.Play();
+		webcamTexture = new WebCamTexture(deviceName, 1024, 768, 30);
+        webcamTexture.Play();
 	}
 
 	void Update () {
