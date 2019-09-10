@@ -3374,7 +3374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &355462687
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4319,7 +4319,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: self
+  m_Text: breathing
 --- !u!222 &450444784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9136,7 +9136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1137547111
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10707,13 +10707,9 @@ MonoBehaviour:
   eachCondition:
   - {fileID: 1394922147}
   - {fileID: 450444783}
-  - {fileID: 142442529}
-  - {fileID: 1435499180}
   delayPerCondition:
   - {fileID: 282558649}
   - {fileID: 1442429365}
-  - {fileID: 1137547112}
-  - {fileID: 1886620131}
 --- !u!1 &1387575754
 GameObject:
   m_ObjectHideFlags: 0
@@ -10967,7 +10963,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: self
+  m_Text: breathing
 --- !u!222 &1394922148
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11688,9 +11684,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: self
+    - m_Text: breathing
       m_Image: {fileID: 0}
-    - m_Text: other
+    - m_Text: breathing
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15492,7 +15488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1886620130
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15627,7 +15623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1887844621
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16177,9 +16173,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: self
+    - m_Text: breathing
       m_Image: {fileID: 0}
-    - m_Text: other
+    - m_Text: breathing
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

@@ -1,0 +1,5 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value,onset,offset
+ValentinTest,44,Female,Rigth handed,0,VAS,breathing,0,0.9611857,37.39307,41.26706
+ValentinTest,44,Female,Rigth handed,1,VAS,breathing,0,0.05039223,37.39307,41.26706
+ValentinTest,44,Female,Rigth handed,0,VAS,self,1,0,51.11308,54.95891
+ValentinTest,44,Female,Rigth handed,1,VAS,self,1,1,51.11308,54.95891
