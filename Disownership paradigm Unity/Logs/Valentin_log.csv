@@ -1,0 +1,21 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
+Valentin,27,Male,Rigth handed,0,VAS,self,0,0.2500299
+Valentin,27,Male,Rigth handed,1,VAS,self,0,0.7338428
+Valentin,27,Male,Rigth handed,2,VAS,self,0,0.5026879
+Valentin,27,Male,Rigth handed,3,VAS,self,0,0
+Valentin,27,Male,Rigth handed,4,VAS,self,0,0.9865011
+Valentin,27,Male,Rigth handed,5,VAS,self,0,0.8144787
+Valentin,27,Male,Rigth handed,6,VAS,self,0,0.4220523
+Valentin,27,Male,Rigth handed,7,VAS,self,0,0.5080637
+Valentin,27,Male,Rigth handed,8,VAS,self,0,0.3790467
+Valentin,27,Male,Rigth handed,9,VAS,self,0,0.610202
+Valentin,27,Male,Rigth handed,0,VAS,self,2,0.1908972
+Valentin,27,Male,Rigth handed,1,VAS,self,2,0.8628598
+Valentin,27,Male,Rigth handed,2,VAS,self,2,0.5241908
+Valentin,27,Male,Rigth handed,3,VAS,self,2,0.1855215
+Valentin,27,Male,Rigth handed,4,VAS,self,2,0.8521082
+Valentin,27,Male,Rigth handed,5,VAS,self,2,0.4274279
+Valentin,27,Male,Rigth handed,6,VAS,self,2,0.5886992
+Valentin,27,Male,Rigth handed,7,VAS,self,2,0.2285272
+Valentin,27,Male,Rigth handed,8,VAS,self,2,0.7714729
+Valentin,27,Male,Rigth handed,9,VAS,self,2,0.4059252
