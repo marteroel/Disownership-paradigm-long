@@ -1,0 +1,4 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
+33,d,Female,Rigth handed,0,VAS,self,1,0.6198645
+33,d,Female,Rigth handed,1,VAS,self,1,0.4559823
+33,d,Female,Rigth handed,2,VAS,self,1,0.5453402
