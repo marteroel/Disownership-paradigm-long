@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2098,13 +2098,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Im folgenden Experiment brauchen Sie nichts weiter zu tun, als Ihren eigenen
-    K\xF6rper zu betrachten und die Fragen auf dem Bildschirm zu beantworten. Sie
-    k\xF6nnen auf die Fragen antworten, indem Sie den roten Punkt in der Mitte des
-    Bildschirms durch Kopfbewegungen an die gew\xFCnschte Position auf dem Antwortbalken
-    bewegen. \n\nWenn Sie die Anweisungen verstanden haben, w\xE4hlen Sie 'trifft
-    voll und ganz zu' auf dem Balken und dann gehen Sie zum Feld 'Weiter'.\n\n(Experimentleiter
-    dr\xFCckt 'c' um das Bild zu zentrieren)"
+  m_Text: "Im folgenden Experiment brauchen Sie nichts weiter zu tun, als den Blick
+    auf Ihren Bauch zu richten und sich auf Ihren Atem zu konzentrieren. Achten Sie
+    darauf, wie sich dies anf\xFChlt, es werden Ihnen danach Fragen zu Ihrem Erleben
+    gestellt. \n\nSie k\xF6nnen auf die Fragen antworten, indem Sie den roten Punkt
+    in der Mitte des Bildschirms durch Kopfbewegungen an die gew\xFCnschte Position
+    auf dem Antwortbalken bewegen. \n\nWenn Sie die Anweisungen verstanden haben,
+    w\xE4hlen Sie 'trifft voll und ganz zu' auf dem Balken und dann gehen Sie zum
+    Feld 'Weiter'."
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
