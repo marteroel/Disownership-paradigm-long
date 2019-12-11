@@ -23,8 +23,6 @@ public class ConditionSetter : MonoBehaviour {
 				selectedDelayOrder.Add (float.Parse (delayPerCondition [i].text));
 			else
 				selectedDelayOrder.Add (0f);
-
-			Debug.Log (selectedDelayOrder [i]);
 		}
 			
 	}
