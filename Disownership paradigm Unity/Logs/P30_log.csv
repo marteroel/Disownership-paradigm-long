@@ -1,0 +1,17 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
+P30,24,Male,Rigth handed,0,VAS,1,0,0.848883
+P30,24,Male,Rigth handed,1,VAS,1,0,0.112653
+P30,24,Male,Rigth handed,2,VAS,1,0,0.1812429
+P30,24,Male,Rigth handed,3,VAS,1,0,0.2934473
+P30,24,Male,Rigth handed,4,VAS,1,0,0.1769529
+P30,24,Male,Rigth handed,5,VAS,1,0,0.2854081
+P30,24,Male,Rigth handed,6,VAS,1,0,0.8087984
+P30,24,Male,Rigth handed,7,VAS,1,0,0.9768347
+P30,24,Male,Rigth handed,0,VAS,2,0.9,0.02755595
+P30,24,Male,Rigth handed,1,VAS,2,0.9,0.107442
+P30,24,Male,Rigth handed,2,VAS,2,0.9,0.5620335
+P30,24,Male,Rigth handed,3,VAS,2,0.9,0.1535579
+P30,24,Male,Rigth handed,4,VAS,2,0.9,0.5720621
+P30,24,Male,Rigth handed,5,VAS,2,0.9,0.6033194
+P30,24,Male,Rigth handed,6,VAS,2,0.9,0.0352839
+P30,24,Male,Rigth handed,7,VAS,2,0.9,0.3444953

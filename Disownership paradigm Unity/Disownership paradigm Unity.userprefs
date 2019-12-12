@@ -6,10 +6,10 @@
       <File FileName="Assets\Packages\Simple VAS VR\SimpleVAS\Scripts\BasicDataConfigurations.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\WebcamUI.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SetSerialDropdown.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ConditionManager.cs" Line="8" Column="22" />
+      <File FileName="Assets\Scripts\ConditionManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\TimedCommands.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\StimulationTestSettings.cs" Line="1" Column="1" />
-      <File FileName="Assets\Packages\SimpleWebcamDelay\Scripts\WebcamDisplay.cs" Line="18" Column="42" />
+      <File FileName="Assets\Packages\SimpleWebcamDelay\Scripts\WebcamDisplay.cs" Line="25" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

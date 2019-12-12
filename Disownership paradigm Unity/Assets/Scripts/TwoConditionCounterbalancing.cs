@@ -7,8 +7,8 @@ public class TwoConditionCounterbalancing : MonoBehaviour {
 
     public InputField[] delayPerCondition;
     public Toggle orderToggle;
-    private float[] order1 = { 0f, 1f, 0f, 1f, 0f, 1f };
-    private float[] order2 = { 1f, 0f, 1f, 0f, 1f, 0f };
+    private float[] order1 = { 0f, 0.9f, 0f, 1f, 0f, 1f };
+    private float[] order2 = { 0.9f, 0f, 1f, 0f, 1f, 0f };
 
     public void SetConditionOrder() {
 

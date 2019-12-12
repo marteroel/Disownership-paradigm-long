@@ -1,0 +1,17 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,delay time,value
+P23_2,23,Male,Left handed,0,VAS,1,0.9,0.8327001
+P23_2,23,Male,Left handed,1,VAS,1,0.9,0.08297415
+P23_2,23,Male,Left handed,2,VAS,1,0.9,0.7800725
+P23_2,23,Male,Left handed,3,VAS,1,0.9,0.5104542
+P23_2,23,Male,Left handed,4,VAS,1,0.9,0.6078202
+P23_2,23,Male,Left handed,5,VAS,1,0.9,0.5732228
+P23_2,23,Male,Left handed,6,VAS,1,0.9,0.2487068
+P23_2,23,Male,Left handed,7,VAS,1,0.9,0.7464495
+P23_2,23,Male,Left handed,0,VAS,2,0,0.8818249
+P23_2,23,Male,Left handed,1,VAS,2,0,0.05053044
+P23_2,23,Male,Left handed,2,VAS,2,0,0.1781475
+P23_2,23,Male,Left handed,3,VAS,2,0,0.7839711
+P23_2,23,Male,Left handed,4,VAS,2,0,0.1319204
+P23_2,23,Male,Left handed,5,VAS,2,0,0.2225466
+P23_2,23,Male,Left handed,6,VAS,2,0,0.8253084
+P23_2,23,Male,Left handed,7,VAS,2,0,0.8844321
