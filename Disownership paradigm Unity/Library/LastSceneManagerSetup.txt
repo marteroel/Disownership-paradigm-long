@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/StimulationTest.unity
+- path: Assets/Scenes/Intro.unity
   isLoaded: 1
   isActive: 1
