@@ -1,8 +1,9 @@
 WindowsStandalone
 PlayerPath?
-D:/Documents/GitHub/Disownership-paradigm-long/Threat (self touch).exe
+D:/Data/Experiments/BIID real foot/Threat (self touch).exe
 SceneListBegin?
 Assets/Scenes/Intro.unity
+Assets/Scenes/StimulationTest.unity
 Assets/Scenes/Instructions.unity
 Assets/Scenes/Inter.unity
 Assets/Scenes/Stimulation.unity
