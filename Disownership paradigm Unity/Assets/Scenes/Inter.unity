@@ -1033,7 +1033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1338755280
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1084,9 +1084,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Sie werden jetzt ein Bein sehen, das ber\xFChrt wird, w\xE4hrend auch Ihr
-    eigenes Bein ber\xFChrt wird. Nach jeder Runde werden Sie dazu aufgefordert, einige
-    Fragen zu beantworten."
+  m_Text: "Sie werden nun Ihre linke Hand mehrmals zur Seite bewegen, wie Sie dies
+    soeben ge\xFCbt haben. Nach jeder Runde werden Sie dazu aufgefordert, einige Fragen
+    zu beantworten."
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1909,9 +1909,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Sie werden jetzt ein Bein sehen, das ber\xFChrt wird, w\xE4hrend auch Ihr
-    eigenes Bein ber\xFChrt wird. Nach jeder Runde werden Sie dazu aufgefordert, einige
-    Fragen zu beantworten."
+  m_Text: "Der Versuchsleiter wird nun Ihre linke Hand mehrmals zur Seite bewegen.
+    Bitte bewegen Sie f\xFCr diese Aufgabe nicht selbst Ihre Hand. Nach jeder Runde
+    werden Sie dazu aufgefordert, einige Fragen zu beantworten."
 --- !u!222 &1791645386
 CanvasRenderer:
   m_ObjectHideFlags: 0
