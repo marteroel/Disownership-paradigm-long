@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-D:/Data/Lab members/Jasmine/Real hand pain VM/Threat (self touch).exe
+D:/Data/Lab members/Jasmine/Real hand pain VM/Real hand pain VM.exe
 SceneListBegin?
 Assets/Scenes/Intro.unity
 Assets/Scenes/Instructions.unity
