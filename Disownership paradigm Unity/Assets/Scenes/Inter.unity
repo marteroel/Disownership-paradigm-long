@@ -1084,9 +1084,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Du wirst nun f\xFCr ca. eine halbe Minute eine Hand sehen, die ber\xFChrt
-    wird w\xE4hrend wir gleichzeitig deine Hand ber\xFChren. Bitte konzentriere dich
-    darauf, wie es sich anf\xFChlt. Wir werden dir nachher einige Fragen dazu stellen."
+  m_Text: "Bitte bewegen Sie Ihren Arm von links nach rechts zwischen den beiden Punkten.
+    Bitte konzentrieren Sie sich darauf, wie es sich anf\xFChlt. Wir werden Ihnen
+    nachher einige Fragen dazu stellen"
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1909,9 +1909,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Du wirst nun f\xFCr ca. eine halbe Minute eine Hand sehen, die ber\xFChrt
-    wird w\xE4hrend wir gleichzeitig deine Hand ber\xFChren. Bitte konzentriere dich
-    darauf, wie es sich anf\xFChlt. Wir werden dir nachher einige Fragen dazu stellen."
+  m_Text: "Bitte bewegen Sie Ihren Arm von links nach rechts zwischen den beiden Punkten.
+    Bitte konzentrieren Sie sich darauf, wie es sich anf\xFChlt. Wir werden Ihnen
+    nachher einige Fragen dazu stellen"
 --- !u!222 &1791645386
 CanvasRenderer:
   m_ObjectHideFlags: 0
